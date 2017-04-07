@@ -1,0 +1,137 @@
+header{
+	background-color: #990000;
+	color:#EDEBEB;
+	height:100%;
+	overflow: visible;
+	text-align: center;
+}
+
+p, h2, h3, body{
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+
+
+header .introRect{
+	position: relative;
+	left: 50%;
+	top: 60%;
+	width: 700px;
+    height: 500px;
+    margin-left: -350px;
+    margin-top: -250px;
+}
+
+
+header .name {
+	margin:0;
+	margin-top:5%;
+	margin-bottom: 3%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 55px;
+	letter-spacing: 6px;
+}
+header .Desc{
+	font-family: 'Raleway', sans-serif;
+	margin-top: 12%;
+	letter-spacing: 2px;
+}
+
+header .school{
+	margin-top: 15%;
+}
+header .about {
+	margin-top: 18%;
+}
+
+header .resume {
+	margin-top: 13%;
+} 
+header .projects {
+	margin-top: 12%;
+} 
+header a{
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	text-decoration: none;
+	text-align: center;
+}
+
+header h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	letter-spacing: 2px;
+}
+
+header ul{
+	padding-left: 0;
+	margin-top: 15%;
+}
+
+header li{
+	margin-top: 3%;
+	list-style-type: none;
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	text-decoration: none;
+	text-align: center;
+	color:#EDEBEB;
+	letter-spacing: 2px;
+
+}
+
+section#about{
+	background-color: #006298;
+	color:#000000;
+	text-align: center;
+
+}
+
+.title{
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 5px;
+	top:50%;
+	padding-top:5%;
+	padding-bottom: 3%;
+	font-size: 55px;
+}
+
+section#about p{
+	
+	width:780px;
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-bottom: 50px;
+}
+
+section#about img.me{
+	display: block;
+
+    height: 100%;
+    width: auto;
+
+ }
+ section#about div.pic{
+ 	width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+ }
+
+ section#resume {
+ 	background-color: #ACA39A;
+ 	color:#FFFFFF;
+ 	text-align: center;
+ }
