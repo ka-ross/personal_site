@@ -1,6 +1,5 @@
 header{
 	background-color: #990000;
-	color:#EDEBEB;
 	height:100%;
 	overflow: visible;
 	text-align: center;
@@ -13,31 +12,36 @@ p, h2, h3, body{
 	margin-bottom:0;
 }
 
+.content {
+	height:100%;
+}
 
 
-header .introRect{
-	position: relative;
+header .introRect {
+	position:relative;
 	left: 50%;
-	top: 60%;
-	width: 700px;
-    height: 500px;
-    margin-left: -350px;
-    margin-top: -250px;
+	top: 400px;
+	width: 800px;
+    height: 1000px;
+    margin-left: -400px;
+    margin-top: -70px;
 }
 
 
 header .name {
 	margin:0;
-	margin-top:5%;
-	margin-bottom: 3%;
+	margin-top:20px;
+	margin-bottom: 15px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 55px;
 	letter-spacing: 6px;
+	color:#EDEBEB;
 }
 header .Desc{
 	font-family: 'Raleway', sans-serif;
 	margin-top: 12%;
 	letter-spacing: 2px;
+	color:#EDEBEB;
 }
 
 header .school{
@@ -69,6 +73,8 @@ header h3 {
 header ul{
 	padding-left: 0;
 	margin-top: 15%;
+	list-style: none;
+	width:100%;
 }
 
 header li{
@@ -79,7 +85,7 @@ header li{
 	text-decoration: none;
 	text-align: center;
 	color:#EDEBEB;
-	letter-spacing: 2px;
+	/*letter-spacing: 2px;*/
 
 }
 
