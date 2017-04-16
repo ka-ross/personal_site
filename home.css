@@ -103,6 +103,7 @@ section#about{
 	padding-top:5%;
 	padding-bottom: 3%;
 	font-size: 55px;
+	left:50%;
 }
 
 section#about p{
@@ -155,10 +156,30 @@ section#about img.me{
 
  section#resume div.resumeContent {
  	position:relative;
-	left: 50%;
 	top: 40px;
 	width: 800px;
     height: 1000px;
     margin-left: -400px;
     margin-top: -70px;
  }
+ section#resume h2.title{
+ 	left:50%;
+ }
+
+ section#resume img.employer{
+ 	max-height: 200px;
+ 	max-width:200px;
+ }
+
+ section#resume table.jobs{
+ 	margin-left:5%;
+ }
+
+ section#resume td.jobdesc p{
+ 	width: 1200px;
+ 	text-align: left;
+ }
+
+ section#resume td.employer {
+    padding-left: 20%;
+}
