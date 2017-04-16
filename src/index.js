@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 var tippyTop = document.getElementsByClassName('content')[0];
 console.log(tippyTop);
 window.scrollTo(0,0);
-var aboutShow=0;
+var aboutShow=0,
+    resShow=0,
+    projShow=0;
 
 loadUp();
 listenForClicks();
@@ -50,23 +52,27 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
 
         $(window).scroll(function() {
             //variables for location of 'About'
-           var about_hT = $('#endofpage').offset().top,
-               about_hH = $('#endofpage').outerHeight(),
+           var about_hT = $('#startAbout').offset().top,
+               about_hH = $('#startAbout').outerHeight(),
                about_wH = $(window).height(),
                about_wS = $(this).scrollTop();
-            var res_hT = $('#endofpage').offset().top,
-               res_hH = $('#endofpage').outerHeight(),
+            var res_hT = $('#startResume').offset().top,
+               res_hH = $('#startResume').outerHeight(),
                res_wH = $(window).height(),
                res_wS = $(this).scrollTop();
            if (about_wS > (about_hT+about_hH-about_wH)){
                 //alert('ABOUT in view!');
                 if (aboutShow == 0){
-                    //showContent('div.aboutContent');
-                    $('section#about div.pic').css('opacity','1');
-                    showContent('section#about h2.title');
-                    ('section#about div.pic img.me').fadeIn('slow');
+                    $('div.aboutContent').fadeIn(2500);
                 }
                 aboutShow = 1;
+             }
+            if (res_wS > (res_hT+res_hH-res_wH)){                
+
+                if (resShow == 0){
+                    $('div.resumeContent').fadeIn(2500);
+                }
+                resShow = 1;
                
 
            }
@@ -84,7 +90,7 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
         $(document).on('click', 'a[href^="#"]', function(e){
             // target element id
             var id = $(this).attr('href');
-
+            console.log(id);
             // target element
             var $id = $(id);
             if ($id.length === 0) {
