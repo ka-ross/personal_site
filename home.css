@@ -141,3 +141,14 @@ section#about img.me{
  	color:#FFFFFF;
  	text-align: center;
  }
+
+ section#resume p {
+ 	width:780px;
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-bottom: 50px;
+ }

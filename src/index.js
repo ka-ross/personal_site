@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 var tippyTop = document.getElementsByClassName('content')[0];
 console.log(tippyTop);
 window.scrollTo(0,0);
+var aboutShow=0;
 
 loadUp();
 listenForClicks();
@@ -47,11 +48,37 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
                 $('html, body').animate({scrollTop: $("#myDiv").offset().top}, 2000);
         });*/
 
-        
+        $(window).scroll(function() {
+            //variables for location of 'About'
+           var about_hT = $('#endofpage').offset().top,
+               about_hH = $('#endofpage').outerHeight(),
+               about_wH = $(window).height(),
+               about_wS = $(this).scrollTop();
+            var res_hT = $('#endofpage').offset().top,
+               res_hH = $('#endofpage').outerHeight(),
+               res_wH = $(window).height(),
+               res_wS = $(this).scrollTop();
+           if (about_wS > (about_hT+about_hH-about_wH)){
+                //alert('ABOUT in view!');
+                if (aboutShow == 0){
+                    //showContent('div.aboutContent');
+                    $('section#about div.pic').css('opacity','1');
+                    showContent('section#about h2.title');
+                    ('section#about div.pic img.me').fadeIn('slow');
+                }
+                aboutShow = 1;
+               
+
+           }
+        });
 
         //load About
         
 }
+
+ function showContent(content) {
+    $(content).animate({'opacity':'1'},{duration: 2000, queue:false});
+ }
 
  function listenForClicks() {     
         $(document).on('click', 'a[href^="#"]', function(e){
@@ -73,7 +100,7 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
             // animated top scrolling
             $('body, html').animate({scrollTop: pos});
             $('.content').offset().top;
-            $('div.aboutContent').animate({'opacity':'1'},{duration: 2500, queue:false});
+            
         });
  }
 
