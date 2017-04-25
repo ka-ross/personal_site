@@ -17,16 +17,23 @@ p, h2, h3, body{
 }
 
 
-header .introRect {
+header #introRect {
 	position:relative;
 	left: 50%;
-	top: 400px;
 	width: 800px;
     height: 1000px;
     margin-left: -400px;
     margin-top: -70px;
 }
 
+div#introRect.jumbotron.text-center {
+	background-color: #990000; 
+	color:#EDEBEB;
+}
+
+h1.name {
+	padding-top: 200px;
+}
 
 header .name {
 	margin:0;
