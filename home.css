@@ -31,6 +31,10 @@ div#introRect.jumbotron.text-center {
 	color:#EDEBEB;
 }
 
+div#resumeContent.jumbotron.text-center {
+	background-color: #ACA39A;
+}
+
 h1.name {
 	padding-top: 200px;
 }
@@ -54,6 +58,10 @@ header .Desc{
 header .school{
 	margin-top: 15%;
 }
+a#subdesc {
+	text-decoration: none;
+}
+
 header .about {
 	margin-top: 18%;
 }
@@ -161,16 +169,16 @@ section#about img.me{
     padding-bottom: 50px;
  }
 
- section#resume div.resumeContent {
+ section#resume div#resumeContent {
  	position:relative;
-	top: 40px;
+	top: 50px;
 	width: 800px;
     height: 1000px;
-    margin-left: -400px;
+    /* margin-left: -400px; */
     margin-top: -70px;
  }
  section#resume h2.title{
- 	left:50%;
+ 	padding-left:60%;
  }
 
  section#resume img.employer{
@@ -178,12 +186,11 @@ section#about img.me{
  	max-width:200px;
  }
 
- section#resume table.jobs{
+ section#resume table#jobs{
  	margin-left:5%;
  }
 
  section#resume td.jobdesc p{
- 	width: 1200px;
  	text-align: left;
  }
 
