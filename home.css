@@ -105,23 +105,30 @@ header li{
 }
 
 section#about{
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
 	background-color: #006298;
 	color:#000000;
-	text-align: center;
-
+	padding-bottom: 50px;
+	padding-left: 8%;
+	padding-right: 10%;
 }
 
 .title{
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: 5px;
-	top:50%;
+	/*top:50%;*/
 	padding-top:5%;
 	padding-bottom: 3%;
 	font-size: 55px;
-	left:50%;
+	padding-left:40%;
+	padding-right:40%;
 }
-
-section#about p{
+section.abt{
+	padding-left: 5%;
+}
+section#about ap{
+	/*use of this call was depricated*/
 	
 	width:780px;
 	font-family: 'Raleway', sans-serif;
@@ -158,7 +165,7 @@ section#about img.me{
  	text-align: center;
  }
 
- section#resume p {
+ section#resume ap {
  	width:780px;
 	font-family: 'Raleway', sans-serif;
 	font-size:26px;
@@ -186,14 +193,21 @@ section#about img.me{
  	max-width:200px;
  }
 
- section#resume table#jobs{
- 	margin-left:5%;
+ section#resume div.tab{
+ 	/*padding-left:10%;
+ 	padding-right:10%;
+ 	padding-bottom: 5%;
+ 	margin-left: 10%;
+ 	font-family: 'Raleway', sans-serif;
+	font-size:18px;*/
  }
 
+;
+
  section#resume td.jobdesc p{
- 	text-align: left;
+ 	/*text-align: left;*/
  }
 
  section#resume td.employer {
-    padding-left: 20%;
+    /*padding-left: 20%;*/
 }
