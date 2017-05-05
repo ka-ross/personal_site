@@ -43,6 +43,12 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
         $('li').mouseout( function() {
                 $(this).css("color", "#EDEBEB");
         });
+        $('tr#even').mouseover( function() {
+            $(this).css("background-color", "#847d76");
+        });
+        $('tr#even').mouseout( function() {
+            $(this).css("background-color", "#ACA39A");
+        });
         //$('ul').animate({'letter-spacing':'4px'},{duration: 2500, queue:false});
         //$('#subdesc').animate({'opacity':'100'}, 5000); 
         /*

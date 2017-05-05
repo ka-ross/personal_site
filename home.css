@@ -66,6 +66,10 @@ header .about {
 	margin-top: 18%;
 }
 
+table.table tbody tr td {
+	border-top:none;
+}
+
 header .resume {
 	margin-top: 13%;
 } 
@@ -161,10 +165,14 @@ section#about img.me{
 
  section#resume {
  	background-color: #ACA39A;
+ 	font-size: 20px;
  	color:#FFFFFF;
- 	text-align: center;
+ 	padding-left:8%;
+ 	padding-right:8%;
+ 	/* padding-bottom: 3%;
+ 	/* text-align: center;*/
  }
-
+/*
  section#resume ap {
  	width:780px;
 	font-family: 'Raleway', sans-serif;
@@ -177,20 +185,20 @@ section#about img.me{
  }
 
  section#resume div#resumeContent {
- 	position:relative;
+ 	/*position:relative;
 	top: 50px;
 	width: 800px;
     height: 1000px;
-    /* margin-left: -400px; */
+     margin-left: -400px; 
     margin-top: -70px;
- }
+ }*/
  section#resume h2.title{
- 	padding-left:60%;
+ 	/* padding-left:60%; */
  }
 
  section#resume img.employer{
- 	max-height: 200px;
- 	max-width:200px;
+ 	/*max-height: 200px;
+ 	max-width:200px;*/
  }
 
  section#resume div.tab{
@@ -208,6 +216,7 @@ section#about img.me{
  	/*text-align: left;*/
  }
 
- section#resume td.employer {
+ section#resume img#employer {
     /*padding-left: 20%;*/
+    width:50%;
 }
