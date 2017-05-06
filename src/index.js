@@ -43,6 +43,12 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
         $('li').mouseout( function() {
                 $(this).css("color", "#EDEBEB");
         });
+        $('tr#even').mouseover( function() {
+            $(this).css("background-color", "#847d76");
+        });
+        $('tr#even').mouseout( function() {
+            $(this).css("background-color", "#ACA39A");
+        });
         //$('ul').animate({'letter-spacing':'4px'},{duration: 2500, queue:false});
         //$('#subdesc').animate({'opacity':'100'}, 5000); 
         /*
@@ -60,6 +66,7 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
                res_hH = $('#startResume').outerHeight(),
                res_wH = $(window).height(),
                res_wS = $(this).scrollTop();
+               
            if (about_wS > (about_hT+about_hH-about_wH)){
                 //alert('ABOUT in view!');
                 if (aboutShow == 0){
@@ -68,9 +75,9 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
                 aboutShow = 1;
              }
             if (res_wS > (res_hT+res_hH-res_wH)){                
-
+                
                 if (resShow == 0){
-                    $('div.resumeContent').fadeIn(2500);
+                    $('div#resumeContent').fadeIn(2500);
                 }
                 resShow = 1;
                
