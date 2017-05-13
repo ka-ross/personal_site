@@ -33,29 +33,20 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
         $('.about').animate({'margin-top':'3%'}, {duration: 1800, queue:false});
         $('.resume').animate({'margin-top':'3%'}, {duration: 2000, queue:false});
         $('.projects').animate({'margin-top':'3%'}, {duration: 2300, queue:false});
-        $('ul').animate({'opacity':'1'}, {duration: 3000, queue:false});
-        $('ul').animate({'margin-top':'3%'}, {duration: 2100, queue:false});
-        
+        $('ul#homeList ').animate({'opacity':'1'}, {duration: 3000, queue:false});
+        $('ul#homeList ').animate({'margin-top':'3%'}, {duration: 2100, queue:false});
+        $('div#jobeven.row-a').hide("slide", { direction: "left" }, 1);
         //change color on hover.
-        $('li').mouseover( function() {
+        $('a#subdesc li').mouseover( function() {
                 $(this).css("color", "#ACA39A");
         });
-        $('li').mouseout( function() {
+        $('a#subdesc li').mouseout( function() {
                 $(this).css("color", "#EDEBEB");
         });
-        //$('tr#even').mouseover( function() {
-        //    $(this).css("background-color", "#847d76");
+        
+        //$("div#resume-row.row-a div#jobdate div#job-current").click( function(){
+        //    $('div#jobeven.row-a').hide("slide", { direction: "left" }, 1800);
         //});
-        //$('tr#even').mouseout( function() {
-        //    $(this).css("background-color", "#ACA39A");
-        //});
-        //$('ul').animate({'letter-spacing':'4px'},{duration: 2500, queue:false});
-        //$('#subdesc').animate({'opacity':'100'}, 5000); 
-        /*
-        $('.about').click( function () {
-                $('html, body').animate({scrollTop: $("#myDiv").offset().top}, 2000);
-        });*/
-
         $(window).scroll(function() {
             //variables for location of 'About'
            var about_hT = $('#startAbout').offset().top,

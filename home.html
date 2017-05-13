@@ -23,7 +23,7 @@
 			<div id="introRect" class="jumbotron text-center">
 				<h1 letter-spacing="0px"class="name" style="opacity:0; letter-spacing:0px;">KYLE ROSS</h1>
 				<h3 class="Desc" id="subdesc" style="opacity:0;">Software Engineer, Process Integrator</h3>
-				<ul style="opacity:0; letter-spacing:0px;">
+				<ul style="opacity:0; letter-spacing:0px;" id="homeList">
 					<a href="#school" class='school' id="subdesc"><li>Indiana University School of Informatics and Computing</li></a>
 					<a href='#about' id="subdesc"><li class='about'>About</li></a>
 					<a href='#resume' id="subdesc"><li class='resume'>Resume</li></a>
@@ -52,21 +52,24 @@
 				<h2 class='title'>RESUME</h2>
 				<div id='years'>
 					<div id="singleyr" style="float:left;"> 2016 </div>
-					<div id="singleyr" style="float:center;"> 2015 </div>
-					<div id="singleyr" style="float:right;"> 2014 </div>
+					<div id="singleyr" style="float:left;"> 2015 </div>
+					<div id="singleyr" style="float:left;"> 2014 </div>
 				</div>
-				<div id='resume-row' >
+				<div id='resume-row' class="row-a">
 					<div id='timeline'><p>This is the timeline!<p></div>
 					<div id='jobdate'>
-						<div id='job-current'><p>JAN '16 -</p><p>CURRENT</p>
+						<div id='job-current'><p>JAN '16 -CURRENT</p>
 						</div>
 					</div>
 
-					<div id="jobeven" class='row'>
-						<div id="words" class="col-md-9">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis, ut sodales odio mi at metus. consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis, ut sodales odio mi at metus. consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis
+					<div id="jobeven" class="row-a">
+						<div id="words" >
+							<h3>
+								<b>Software Engineer Asc.</b></h3>
+							<h4><b>Lockheed Martin Aeronautics</b></h4>
+							<p> Performed tasks as a Software Tester, Scrum Master, Process Integrator, and Scrum of Scrums Leader. These roles provided experiences in writing Requirements/Testing Documentation, Automated Testing Scripts, and Consulting on organization's official Software Development Process.</p>
 						</div>
-						<div id='jobpic' class="col-md-2">
+						<div id='jobpic'>
 							<img src='res/Lockheed_Martin.jpg' >
 
 						</div>
@@ -77,12 +80,15 @@
 				<div id='resume-row'>
 					<div id='timeline'><p>This is the timeline!<p></div>
 					<div id='jobdate'>
-						<div id='jobd'><p>AUG '15 -</p><p>DEC '15</p></div>
+						<div id='jobd'><p>JUN '15 -DEC '15</p></div>
 					</div>
-					<div id="jobodd">
-						<div id="words">
+					<div id="jobodd" >
+						<div id="words" >
+							<h3>
+								<b>Research Assistant</b></h3>
+							<h4><b>School of Informatics and Computing, Indiana University Bloomington</b></h4>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis, ut sodales odio mi at metus. consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis, ut sodales odio mi at metus. consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis
+								Improved a low-power hardware design, specifically created for the Indiana Department of Natural Resources to monitor trail usage, and allow for the hardware to run effectively for weeks to months longer than the prototype could.  Developed and calibrated the hardware interrupts for an accelerometer on the STM32F3 Discovery Board.
 							</p>
 						</div>
 						<div id='jobpic'>
@@ -91,16 +97,27 @@
 					</div>
 					
 				</div>
-					<div id="jobeven">
-						<div id="words">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis, ut sodales odio mi at metus. consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis, ut sodales odio mi at metus. consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis
-							</p>
-						</div>
-						<div id='jobpic'>
-							<img src='res/Lockheed_Martin.jpg' >
+					<div id='resume-row' >
+					<div id='timeline'><p>This is the timeline!<p></div>
+					<div id='jobdate'>
+						<div id='jobd'><p>AUG '14 - DEC '14 </p>
 						</div>
 					</div>
+
+					<div id="jobeven" class='row'>
+						<div id="words" class="col-md-9">
+							<h3>
+								<b>Project Leader</b></h3>
+							<h4><b>ServeIT Nonprofit Clinic, Indiana University Bloomington</b></h4>
+							<p>Managed over a team of fellow students, with the Buskirk-Chumley Theater (BCT) non-profit organization, to create an Availability Calendar, to save the time of both potential event renters as well as theater administration.Delegated research and report tasks to the team to complete a Research and Integration Report to consolidate their two-site ticket sale system.</p>
+						</div>
+						<div id='jobpic' class="col-md-2">
+							<img src='res/Lockheed_Martin.jpg' >
+
+						</div>
+					</div>
+					
+				</div>
 
 				
 				<p> End of Res </p>

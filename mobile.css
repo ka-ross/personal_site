@@ -10,6 +10,7 @@ p, h2, h3, body{
 	margin-right:0;
 	margin-top:0;
 	margin-bottom:0;
+	font-size: 18px;
 }
 
 .content {
@@ -19,9 +20,9 @@ p, h2, h3, body{
 
 header #introRect {
 	position:relative;
-	left: 50%;
-	width: 800px;
-    height: 1000px;
+	left: 88%;
+	width: 100%;
+    height: 700px;
     margin-left: -400px;
     margin-top: -70px;
 }
@@ -41,11 +42,10 @@ h1.name {
 
 header .name {
 	margin:0;
-	margin-top:20px;
 	margin-bottom: 15px;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 55px;
-	letter-spacing: 6px;
+	font-size: 35px;
+	letter-spacing: 4px;
 	color:#EDEBEB;
 }
 header .Desc{
@@ -78,14 +78,14 @@ header .projects {
 } 
 header a{
 	font-family: 'Raleway', sans-serif;
-	font-size:26px;
+	font-size:18px;
 	text-decoration: none;
 	text-align: center;
 }
 
 header h3 {
 	font-family: 'Raleway', sans-serif;
-	font-size:26px;
+	font-size:18px;
 	letter-spacing: 2px;
 }
 
@@ -100,7 +100,7 @@ header li{
 	margin-top: 3%;
 	list-style-type: none;
 	font-family: 'Raleway', sans-serif;
-	font-size:26px;
+	font-size:18px;
 	text-decoration: none;
 	text-align: center;
 	color:#EDEBEB;
@@ -110,7 +110,8 @@ header li{
 
 section#about{
 	font-family: 'Raleway', sans-serif;
-	font-size:26px;
+	height: 600px;
+	font-size:20px;
 	background-color: #006298;
 	color:#000000;
 	padding-bottom: 50px;
@@ -121,39 +122,21 @@ section#about{
 .title{
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: 5px;
-	/*top:50%;*/
-	padding-top:5%;
 	padding-bottom: 3%;
 	font-size: 55px;
-	padding-left:40%;
-	padding-right:40%;
+	text-align: center;
 }
-section.abt{
-	padding-left: 5%;
-}
-section#about ap{
-	/*use of this call was depricated*/
-	
-	width:780px;
-	font-family: 'Raleway', sans-serif;
-	font-size:26px;
-	margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding-bottom: 50px;
-}
+
 
 section#about img.me{
 	display: block;
-
     height: 100%;
     width: auto;
 
  }
  section#about div#pic{
- 	width: 250px;
-    height: 250px;
+ 	width: 150px;
+    height: 150px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -174,51 +157,7 @@ section#about img.me{
  	/* padding-bottom: 3%;
  	/* text-align: center;*/
  }
-/*
- section#resume ap {
- 	width:780px;
-	font-family: 'Raleway', sans-serif;
-	font-size:26px;
-	margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding-bottom: 50px;
- }
 
- section#resume div#resumeContent {
- 	/*position:relative;
-	top: 50px;
-	width: 800px;
-    height: 1000px;
-     margin-left: -400px; 
-    margin-top: -70px;
- }*/
- section#resume h2.title{
- 	padding-left:9%;
- 	color: #847d76;
- }
-
- section#resume img#employer{
- 	width:100%;
- 	/*max-height: 200px;
- 	max-width:200px;*/
- }
-
- section#resume div.tab{
- 	/*padding-left:10%;
- 	padding-right:10%;
- 	padding-bottom: 5%;
- 	margin-left: 10%;
- 	font-family: 'Raleway', sans-serif;
-	font-size:18px;*/
- }
-
-;
-
- section#resume td.jobdesc p{
- 	/*text-align: left;*/
- }
 
 
 tr#even {
@@ -234,27 +173,29 @@ td#empImg{
 }
 
 div#jobeven{
-	width:285px;
-	height:450px;
+	width:100%;
+	height:80%;
 	padding:2%;
 	background-color: #bfb4aa;
 	/*border-radius: 20px;*/
 	margin-top: 20px;
 	margin-left: 5px;
 	box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
-	float:right;
-	display: inline-block;
+	position: relative;
+	/*float:right;
+	display: inline-block;*/
 }
 
 div#jobodd{
-	width:605px;
-	height:450px;
+	width:100%;
+	height:80%;
 	padding:2%;
+	background-color: #bfb4aa;
+	box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
 	/*border-radius: 20px;*/
 	margin-top: 20px;
-	margin-left: 20px;
-	float:right;
-	display: inline-block;
+	margin-left: 5px;
+	position: relative;
 }
 
 #jobdate {
@@ -264,10 +205,9 @@ div#jobodd{
 	width:80px;
 	height: 80px;
 	border-radius: 50%;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-right: auto;
     margin-bottom: 20px;
-    /*margin-left: auto;*/
     margin-left
     text-align: center;
     font-size: 12px;
@@ -284,6 +224,10 @@ div#jobodd{
 	text-align: center;
 }
 
+#job-current p{
+	font-size: 12px;
+}
+
 #jobd{
 	display: block;
     height: 100%;
@@ -291,6 +235,10 @@ div#jobodd{
     padding-top: 26%;
 	padding-bottom: 2%;
 	padding-left: 0%;
+}
+#jobd p{
+	font-size: 12px;
+	padding-left:19%
 }
 
 #jobdate:after {
@@ -307,7 +255,7 @@ div#jobodd{
 #timeline{
 	padding-top: 43%;
 	padding-bottom:150%;
-	margin-left: 13%;
+	margin-left: 8%;
 	margin-top: 17%;
 	color:#847d76;
 	border-left: thick dotted #847d76;
@@ -319,42 +267,34 @@ div#jobodd{
 }
 
 #resume-row{
-	display: inline-block;
+	width: 96%;
 }
 
 
 div#words{
-	/*width:70%;*/
-
-	
-	padding-top: 15px;
+	padding-top: 10px;
 	padding-left: 20px;
-	float:right;
-	width:280px;
+	width:100%;
 	word-wrap: break-word;
 
 }
 div#jobpic{
-
-	
 	width:250px;
-	/*
-	width:120px;
-	position: absolute;
-	padding-top: 15%;
-	padding-right: 5%;*/
+	margin-bottom: 5%;
 }
 div#jobpic img{
 	padding-left: 5%;
 	padding-top: 20px;
 	width:100%;
+	display:none;
 }
 
 div#years {
 	display: inline-block;
-	text-align: center;
+	width:100%;
+	margin-left: 33%;
 }
 
 div#singleyr{
-	float: center;
+	padding-left: 2%;
 }
