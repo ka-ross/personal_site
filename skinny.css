@@ -91,7 +91,7 @@ header h3 {
 
 header ul{
 	padding-left: 0;
-	margin-top: 15%;
+	margin-top: 4%;
 	list-style: none;
 	width:100%;
 }
@@ -131,17 +131,8 @@ section#about{
 section.abt{
 	padding-left: 5%;
 }
-section#about ap{
-	/*use of this call was depricated*/
-	
-	width:780px;
-	font-family: 'Raleway', sans-serif;
-	font-size:26px;
-	margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding-bottom: 50px;
+section#about p{	
+	text-align: center;
 }
 
 section#about img.me{
@@ -174,28 +165,10 @@ section#about img.me{
  	/* padding-bottom: 3%;
  	/* text-align: center;*/
  }
-/*
- section#resume ap {
- 	width:780px;
-	font-family: 'Raleway', sans-serif;
-	font-size:26px;
-	margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding-bottom: 50px;
- }
 
- section#resume div#resumeContent {
- 	/*position:relative;
-	top: 50px;
-	width: 800px;
-    height: 1000px;
-     margin-left: -400px; 
-    margin-top: -70px;
- }*/
  section#resume h2.title{
  	/* padding-left:60%; */
+ 	text-align: center;
  	color: #847d76;
  }
 
@@ -204,17 +177,6 @@ section#about img.me{
  	/*max-height: 200px;
  	max-width:200px;*/
  }
-
- section#resume div.tab{
- 	/*padding-left:10%;
- 	padding-right:10%;
- 	padding-bottom: 5%;
- 	margin-left: 10%;
- 	font-family: 'Raleway', sans-serif;
-	font-size:18px;*/
- }
-
-;
 
  section#resume td.jobdesc p{
  	/*text-align: left;*/
@@ -229,30 +191,32 @@ tr#even {
 	border:10px solid #847d76;
 }
 
+
+
+
 td#empImg{
 	width:20%;
 }
 
 div#jobeven{
-	width:605px;
-	height:250px;
+	width:83%;
+	height:90%;
 	padding:2%;
 	background-color: #bfb4aa;
 	/*border-radius: 20px;*/
-	margin-top: 20px;
-	margin-left: 20px;
+	margin-top: 8%;
+	margin-left: 2%;
 	box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
 	float:right;
 	display: inline-block;
 }
 
 div#jobodd{
-	width:605px;
-	height:250px;
+	width:83%;
+	height:90%;
 	padding:2%;
-	/*border-radius: 20px;*/
-	margin-top: 20px;
-	margin-left: 20px;
+	margin-top: 8%;
+	margin-left: 2%;
 	float:right;
 	display: inline-block;
 }
@@ -262,8 +226,8 @@ div#jobodd{
 	color: #FFFFFF;
 	position: relative;
 	float:left;
-	width:80px;
-	height: 80px;
+	width:95px;
+	height: 95px;
 	border-radius: 50%;
     margin-top: 15%;
     margin-right: auto;
@@ -278,7 +242,7 @@ div#jobodd{
 	display: block;
     height: 100%;
     width: auto;
-    padding-top: 24%;
+    padding-top: 31%;
 	padding-bottom: 2%;
 	padding-left: 0%;
 }
@@ -286,10 +250,16 @@ div#jobodd{
 #jobd{
 	display: block;
     height: 100%;
-    width: auto;
+    width: 90%;
     padding-top: 26%;
 	padding-bottom: 2%;
 	padding-left: 0%;
+}
+
+#jobd p{
+	font-size: 12px;
+	padding-left:14%;
+	padding-top:2%;
 }
 
 #jobdate:after {
@@ -305,8 +275,8 @@ div#jobodd{
 
 #timeline{
 	padding-top: 26%;
-	padding-bottom:10%;
-	margin-left: 5%;
+	padding-bottom:13%;
+	margin-left: 4%;
 	margin-top: 17%;
 	color:#847d76;
 	border-left: thick dotted #847d76;
@@ -319,6 +289,7 @@ div#jobodd{
 
 #resume-row{
 	display: inline-block;
+	width:95%;
 }
 
 
@@ -328,17 +299,30 @@ div#words{
 	
 	padding-top: 2%;*/
 	float:left;
-	width:450px;
-	word-wrap: break-word;
+	width:70%;
+	/*word-wrap: break-word;*/
 
 }
 div#jobpic{
-	width:120px;
+	width:17%;
 	float:right;
-	padding-top: 15%;
+	padding-top: 7%;
 }
 div#jobpic img{
 	width:100%;
 }
 
 
+div#years {
+	display: inline-block;
+	width:100%;
+	margin-left: 43%;
+}
+
+div#singleyr{
+	padding-left: 2%;
+}
+
+div#singleyr a{
+	text-decoration: none;
+}

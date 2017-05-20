@@ -34,16 +34,33 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
         $('.resume').animate({'margin-top':'3%'}, {duration: 2000, queue:false});
         $('.projects').animate({'margin-top':'3%'}, {duration: 2300, queue:false});
         $('ul#homeList ').animate({'opacity':'1'}, {duration: 3000, queue:false});
-        $('ul#homeList ').animate({'margin-top':'3%'}, {duration: 2100, queue:false});
-        $('div#jobeven.row-a').hide("slide", { direction: "left" }, 1);
+        $('div#earlierPos').slideUp("fast", function(){
+                //animation complete
+            });
+        //$('ul#homeList ').animate({'margin-top':'3%'}, {duration: 2100, queue:false});
+        //$('div#jobeven.row-a').hide("slide", { direction: "left" }, 1);
         //change color on hover.
         $('a#subdesc li').mouseover( function() {
                 $(this).css("color", "#ACA39A");
+                //$(this).show("slide", { direction: "left" }, 1000);
         });
         $('a#subdesc li').mouseout( function() {
                 $(this).css("color", "#EDEBEB");
         });
-        
+        $('div#expandEarlierPos').hover( function(){
+            $(this).css("color:", "#23527c");
+        });
+        $('div#expandEarlierPos').click( function(){
+    
+            $(this).slideUp("fast", function(){
+                //animation complete
+                $('div#earlierPos').slideDown(2000);
+            });
+
+            $('.tline_three').animate({'opacity':'1'},{duration: 2500, queue:false});
+            
+            //alert("read you loud and clear");
+        });
         //$("div#resume-row.row-a div#jobdate div#job-current").click( function(){
         //    $('div#jobeven.row-a').hide("slide", { direction: "left" }, 1800);
         //});

@@ -6,7 +6,8 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     	<link href="mobile.css" rel="stylesheet" media="(min-width: 300px) and (max-width: 799px)">
-  		<link href="home.css" rel="stylesheet" media="(min-width: 800px)">
+    	<link href="skinny.css" rel="stylesheet" media="(min-width:800px) and (max-width: 1772px)">
+  		<link href="home.css" rel="stylesheet" media="(min-width: 1773px)">
   		<!-- <link href="skinny.css" rel="stylesheet" media="(max-width: 800px)"> -->
 
   		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Raleway:600" rel="stylesheet">
@@ -39,34 +40,40 @@
 			<div>
 				<h2 class='title'>ABOUT</h2>
 				<div id='pic'>
-					<img src="res/pinkbird.jpg" class="me">
+					<img src="res/me.jpg" class="me">
 				</div>
 				<!-- <p class='words'> -->
 				<p>
-					ABOUT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis, ut sodales odio mi at metus. consectetur adipiscing elit. Morbi convallis, nibh non lobortis eleifend, enim nulla rhoncus felis
+					My name is Kyle Ross, and as the previous page said, I am a Computer Science major from Induana University's School of Informatics and Computing. I received a specialization in Embedded Systems Hardware, with minors in both Spanish and Business. Outside of work, I enjoy hiking, photography, and I collect Vinyl Records. 
 				</p>
 			</div>
 		</section>
 		<section id='resume'>
 			<i id='startResume' style="opacity:0">R</i>
 				<h2 class='title'>RESUME</h2>
-				<div id='years'>
-					<div id="singleyr" style="float:left;"> 2016 </div>
-					<div id="singleyr" style="float:left;"> 2015 </div>
-					<div id="singleyr" style="float:left;"> 2014 </div>
-				</div>
-				<div id='resume-row' class="row-a">
+				<center><div id='years'>
+					<!-- <div id="singleyr" style="float:left;"> 2016 </div>
+					<div id="singleyr" style="float:left;"> <a href="#fifteen">2015</a> </div>
+					<div id="singleyr" style="float:left;"> <a href="#fourteen">2014 </a> </div> -->
+					
+						2016 -     
+						<a href="#fifteen" id='singleyr'> 2015 </a> 
+						-
+						<a href="#fourteen" id='singleyr'> 2014 </a>
+					
+				</div></center>
+				<div id='resume-row'>
 					<div id='timeline'><p>This is the timeline!<p></div>
 					<div id='jobdate'>
 						<div id='job-current'><p>JAN '16 -CURRENT</p>
 						</div>
 					</div>
 
-					<div id="jobeven" class="row-a">
+					<div id="jobeven">
 						<div id="words" >
 							<h3>
 								<b>Software Engineer Asc.</b></h3>
-							<h4><b>Lockheed Martin Aeronautics</b></h4>
+							<h4><b>Lockheed Martin Aeronautics - Fort Worth, TX</b></h4>
 							<p> Performed tasks as a Software Tester, Scrum Master, Process Integrator, and Scrum of Scrums Leader. These roles provided experiences in writing Requirements/Testing Documentation, Automated Testing Scripts, and Consulting on organization's official Software Development Process.</p>
 						</div>
 						<div id='jobpic'>
@@ -76,7 +83,7 @@
 					</div>
 					
 				</div>
-
+				
 				<div id='resume-row'>
 					<div id='timeline'><p>This is the timeline!<p></div>
 					<div id='jobdate'>
@@ -86,7 +93,7 @@
 						<div id="words" >
 							<h3>
 								<b>Research Assistant</b></h3>
-							<h4><b>School of Informatics and Computing, Indiana University Bloomington</b></h4>
+							<h4><b>School of Informatics and Computing, Indiana University Bloomington - Bloomington, IN</b></h4>
 							<p>
 								Improved a low-power hardware design, specifically created for the Indiana Department of Natural Resources to monitor trail usage, and allow for the hardware to run effectively for weeks to months longer than the prototype could.  Developed and calibrated the hardware interrupts for an accelerometer on the STM32F3 Discovery Board.
 							</p>
@@ -95,32 +102,57 @@
 							<img src='res/iu.png'>
 						</div>
 					</div>
-					
+					<i id="fifteen"></i>
 				</div>
+					
 					<div id='resume-row' >
-					<div id='timeline'><p>This is the timeline!<p></div>
+					<div id='timeline' class="tline_three"style="opacity:0;"><p>This is the timeline!<p></div>
 					<div id='jobdate'>
 						<div id='jobd'><p>AUG '14 - DEC '14 </p>
 						</div>
 					</div>
 
-					<div id="jobeven" class='row'>
-						<div id="words" class="col-md-9">
+					<div id="jobeven" >
+						<div id="words">
 							<h3>
 								<b>Project Leader</b></h3>
-							<h4><b>ServeIT Nonprofit Clinic, Indiana University Bloomington</b></h4>
+							<h4><b>ServeIT Nonprofit Clinic, Indiana University Bloomington - Bloomington, IN</b></h4>
 							<p>Managed over a team of fellow students, with the Buskirk-Chumley Theater (BCT) non-profit organization, to create an Availability Calendar, to save the time of both potential event renters as well as theater administration.Delegated research and report tasks to the team to complete a Research and Integration Report to consolidate their two-site ticket sale system.</p>
 						</div>
-						<div id='jobpic' class="col-md-2">
-							<img src='res/Lockheed_Martin.jpg' >
+						<div id='jobpic'>
+							<img src='res/serveit.png' >
 
 						</div>
 					</div>
-					
+					<i id="fourteen"></i>
 				</div>
-
+				<center>
+					<div id='expandEarlierPos' style='text-decoration:none; color:#68a2ff;'>
+					Expand Earlier Positions</div>
+					</center>
+				<div id='resume-row' >
+					<div id='timeline' class="tline_four"style="opacity:0;"><p>This is the timeline!<p></div>
+					<div id='earlierPos'>
+						<div id='jobdate'>
+						<div id='jobd'><p>AUG '14 - DEC '14 </p>
+						</div>
+					</div>
+					
+					
+						<div id="jobodd" >
+							<div id="words">
+								<h3>
+									<b>IT Manager</b></h3>
+								<h4><b>Michael Wall Engineering, San Diego, CA</b></h4>
+								<p> Provided management a Cost Analysis for various needs of the firm, including a backup system using a RAID data storage system, as well as created a simple database on which files have been archived</p>
+							</div>
+							<div id='jobpic'>
+							<img src='res/serveit.png' >
+							</div>
+						</div>
+					</div>
+				</div>
 				
-				<p> End of Res </p>
 			<!--</div> table responsive--> 
 			
 		</section>

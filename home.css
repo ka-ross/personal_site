@@ -91,7 +91,6 @@ header h3 {
 
 header ul{
 	padding-left: 0;
-	margin-top: 15%;
 	list-style: none;
 	width:100%;
 }
@@ -115,7 +114,7 @@ section#about{
 	color:#000000;
 	padding-bottom: 50px;
 	padding-left: 8%;
-	padding-right: 10%;
+	padding-right: 8%;
 }
 
 .title{
@@ -127,6 +126,7 @@ section#about{
 	font-size: 55px;
 	padding-left:40%;
 	padding-right:40%;
+	text-align: center;
 }
 section.abt{
 	padding-left: 5%;
@@ -341,11 +341,22 @@ div#jobpic img{
 div#years {
 	display: inline-block;
 	width:400px;
-	margin-left: 40%;
+	margin-bottom: 3%;
 	/*text-align: center;*/
 }
 
 div#singleyr{
 	/*float: center;*/
 	padding-left: 2%
+}
+
+a#singleyr {
+	text-decoration: none;
+}
+
+div#expandEarlierPos{
+	position: absolute;
+	z-index: 2;
+	padding-left: 40%;
+	padding-top: 3%;
 }
