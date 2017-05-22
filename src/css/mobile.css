@@ -35,7 +35,7 @@ div#resumeContent.jumbotron.text-center {
 }
 
 h1.name {
-	padding-top: 200px;
+	padding-top: 40%;
 }
 
 header .name {
@@ -253,8 +253,8 @@ div#jobodd{
 
 #timeline{
 	padding-top: 9%;
-	padding-bottom:104%;
-	margin-left: 8%;
+	padding-bottom:114%;
+	margin-left: 9%;
 	margin-top: 17%;
 	color:#847d76;
 	border-left: thick dotted #847d76;
@@ -289,7 +289,7 @@ div#jobpic img{
 }
 div#years {
 	display: inline-block;
-	width:400px;
+	width:370px;
 	margin-bottom: 3%;
 }
 
