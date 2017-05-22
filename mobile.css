@@ -252,8 +252,8 @@ div#jobodd{
 }
 
 #timeline{
-	padding-top: 43%;
-	padding-bottom:150%;
+	padding-top: 9%;
+	padding-bottom:104%;
 	margin-left: 8%;
 	margin-top: 17%;
 	color:#847d76;
@@ -287,11 +287,10 @@ div#jobpic img{
 	width:100%;
 	display:none;
 }
-
 div#years {
 	display: inline-block;
-	width:100%;
-	margin-left: 33%;
+	width:400px;
+	margin-bottom: 3%;
 }
 
 div#singleyr{

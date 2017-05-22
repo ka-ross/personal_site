@@ -37,7 +37,7 @@
 		<!-- <section class="abt"> -->
 			<i id='startAbout' style="opacity:0">A</i>
 			<!-- <div class="aboutContent"  style="display:none" > -->
-			<div>
+			<div class="aboutContent">
 				<h2 class='title'>ABOUT</h2>
 				<div id='pic'>
 					<img src="res/me.jpg" class="me">
@@ -50,6 +50,7 @@
 		</section>
 		<section id='resume'>
 			<i id='startResume' style="opacity:0">R</i>
+				<div id="ResumeContent">
 				<h2 class='title'>RESUME</h2>
 				<center><div id='years'>
 					<!-- <div id="singleyr" style="float:left;"> 2016 </div>
@@ -126,12 +127,9 @@
 					</div>
 					<i id="fourteen"></i>
 				</div>
-				<center>
-					<div id='expandEarlierPos' style='text-decoration:none; color:#68a2ff;'>
-					Expand Earlier Positions</div>
-					</center>
+
 				<div id='resume-row' >
-					<div id='timeline' class="tline_four"style="opacity:0;"><p>This is the timeline!<p></div>
+					<div id='timeline' class="tline_four"style="display:none;"><p>This is the timeline!<p></div>
 					<div id='earlierPos'>
 						<div id='jobdate'>
 						<div id='jobd'><p>AUG '14 - DEC '14 </p>
@@ -152,7 +150,14 @@
 						</div>
 					</div>
 				</div>
-				
+
+				</div>
+				<center>
+					<div id='expandEarlierPos' >
+					<a href="#endResume" style='text-decoration:none; color:#337ab7;'>Expand Earlier Positions </a>
+					</div>
+				</center>
+				<i class='endResume' style="opacity:0">B</i>
 			<!--</div> table responsive--> 
 			
 		</section>
