@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    	<link href="src/css/mobile.css" rel="stylesheet" media="(min-width: 300px) and (max-width: 799px)">
+    	<link href="src/css/mobile.css" rel="stylesheet" media="(max-width: 799px)">
     	<link href="src/css/skinny.css" rel="stylesheet" media="(min-width:800px) and (max-width: 1772px)">
   		<link href="src/css/home.css" rel="stylesheet" media="(min-width: 1773px)">
   		<!-- <link href="skinny.css" rel="stylesheet" media="(max-width: 800px)"> -->
@@ -18,7 +18,7 @@
 		<script src="src/js/index.js"></script>
 		<script src="src/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	</head>
-	<body>
+	<body style="overflow-x:hidden">
 	<div class="content">
 		<header>
 			<div id="introRect" class="jumbotron text-center">
@@ -47,6 +47,7 @@
 					My name is Kyle Ross, and as the previous page said, I am a Computer Science major from Induana University's School of Informatics and Computing. I received a specialization in Embedded Systems Hardware, with minors in both Spanish and Business. Outside of work, I enjoy hiking, photography, and I collect Vinyl Records. 
 				</p>
 			</div>
+			<i id='endAbout' style="opacity:0">A</i>
 		</section>
 		<section id='resume'>
 			<i id='startResume' style="opacity:0">R</i>
@@ -154,7 +155,7 @@
 				</div>
 				<center>
 					<div id='expandEarlierPos' >
-					<a href="#endResume" style='text-decoration:none; color:#337ab7;'>Expand Earlier Positions </a>
+						<a href="#endResume" style='text-decoration:none; color:#337ab7;' id="expandlink">Expand Earlier Positions </a>
 					</div>
 				</center>
 				<i class='endResume' style="opacity:0">B</i>

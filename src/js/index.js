@@ -21,8 +21,13 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
 */
 
  function loadUp(){
+        console.log("works");
         $('div.aboutContent').fadeOut(1);
         $('div#ResumeContent').fadeOut(1);
+        $('div#expandEarlierPos').fadeOut(1);
+        $('div#expandEarlierPos').css("color", "#FFFFFF");
+        //$('a#expandlink').fadeOut(1);
+        //$('a#expandlink').css("color", "#000000");
         //window.scrollTo(0,0);
         var tippyTop = document.getElementsByClassName('content')[0];
         tippyTop.scrollTop =0;
@@ -63,6 +68,7 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
             });
 
             $('.tline_three').animate({'opacity':'1'},{duration: 2500, queue:false});
+            $('.tline_four').animate({'opacity':'1'},{duration: 2500, queue:false});
             
             //alert("read you loud and clear");
         });
@@ -79,23 +85,28 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
                res_hH = $('i#startResume').outerHeight(),
                res_wH = $(window).height(),
                res_wS = $(this).scrollTop();
-               
-           if (about_wS > (about_hT+about_hH-about_wH)){
+            /* Check if the Top of the screen has passed
+             the calculated location of the top of the 
+             selected HTML object, minus the height of
+             the window.   */
+           if (about_wS > (about_hT+about_hH-about_wH-200)){
                 //alert('ABOUT in view!');
                 if (aboutShow == 0){
                     $('div.aboutContent').fadeIn(2500);
                 }
                 aboutShow = 1;
              }
-            if (res_wS > (res_hT+res_hH-res_wH)){                
-                
+            if (res_wS > (res_hT+res_hH-res_wH-150)){                
+                console.log("Start Res.")
                 if (resShow == 0){
-                    $('div#ResumeContent').fadeIn(2500);
+                    $('div#ResumeContent').fadeIn(3000);
+                    $('div#expandEarlierPos').fadeIn(3200);
+                    //$('a#expandlink').fadeIn(2700);
                 }
                 resShow = 1;
-               
-
            }
+
+
         });
 
         //load About

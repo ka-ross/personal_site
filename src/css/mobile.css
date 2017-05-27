@@ -1,5 +1,6 @@
 header{
 	background-color: #990000;
+	/*background-color: #283c86;*/
 	height:100%;
 	overflow: visible;
 	text-align: center;
@@ -27,11 +28,13 @@ header #introRect {
 
 div#introRect.jumbotron.text-center {
 	background-color: #990000; 
-	color:#EDEBEB;
+	color:#EDEBEB;*/
+	/*background: linear-gradient(180deg, #45a247, #283c86);*/
 }
 
 div#resumeContent.jumbotron.text-center {
-	background-color: #ACA39A;
+	/*background-color: #ACA39A;*/
+	/*background: linear-gradient(180deg, #283c86, #EF3B36);*/
 }
 
 h1.name {
@@ -110,6 +113,7 @@ section#about{
 	font-family: 'Raleway', sans-serif;
 	height: 600px;
 	font-size:20px;
+	/*background: linear-gradient(180deg, #283c86, #EF3B36);*/
 	background-color: #006298;
 	color:#000000;
 	padding-bottom: 50px;
@@ -148,6 +152,7 @@ section#about img.me{
  section#resume {
  	font-family: 'Raleway', sans-serif;
  	background-color: #ACA39A;
+ 	/*background: linear-gradient(180deg, #EF3B36,#ef473a);*/
  	font-size: 14px;
  	color:#847d76;
  	width: 100%;
@@ -252,7 +257,7 @@ div#jobodd{
 }
 
 #timeline{
-	padding-top: 9%;
+	padding-top: 13%;
 	padding-bottom:114%;
 	margin-left: 9%;
 	margin-top: 17%;
@@ -299,4 +304,8 @@ div#singleyr{
 
 div#singleyr a{
 	text-decoration: none;
+}
+
+div#expandEarlierPos{
+	padding-top: 9%;
 }
