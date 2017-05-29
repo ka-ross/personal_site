@@ -6,7 +6,8 @@ console.log(tippyTop);
 window.scrollTo(0,0);
 var aboutShow=0,
     resShow=0,
-    projShow=0;
+    projShow=0,
+    serveitShow=0;
 
 loadUp();
 listenForClicks();
@@ -26,6 +27,8 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
         $('div#ResumeContent').fadeOut(1);
         $('div#expandEarlierPos').fadeOut(1);
         $('div#expandEarlierPos').css("color", "#FFFFFF");
+        $(".buttonUnfold").slideUp(1);
+        $('.datebutton').animate({'margin-left':'40%'}, {duration: 10, queue:false});
         //$('a#expandlink').fadeOut(1);
         //$('a#expandlink').css("color", "#000000");
         //window.scrollTo(0,0);
@@ -97,7 +100,6 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
                 aboutShow = 1;
              }
             if (res_wS > (res_hT+res_hH-res_wH-150)){                
-                console.log("Start Res.")
                 if (resShow == 0){
                     $('div#ResumeContent').fadeIn(3000);
                     $('div#expandEarlierPos').fadeIn(3200);
@@ -139,7 +141,23 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
             $('.content').offset().top;
             
         });
+
+        $(".datebutton").click(function() {
+            if(serveitShow === 0) {
+                $(".buttonUnfold").slideDown(2000);
+                $(this).animate({'margin-left':'0%'}, {duration: 2000, queue:true});
+                
+                serveitShow = 1;
+            } else {
+                $(this).animate({'margin-left':'40%'}, {duration: 2000, queue:true});
+                $(".buttonUnfold").slideUp(2000);
+                
+                //$(this).css("padding-left", "30%");
+                serveitShow = 0;
+            }
+        });
+
  }
 
-        	
+        	// @TODO:  need to make the date button more universally usable.
 });

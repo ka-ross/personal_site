@@ -33,7 +33,7 @@ header #introRect {
 div#introRect.jumbotron.text-center {
 	/*background-color: #990000;*/
 	color:#EDEBEB;
-	background: linear-gradient(180deg, #45a247, #283c86);
+	background: linear-gradient(180deg, #00c3ff, #283c86);
 }
 
 div#resumeContent.jumbotron.text-center {
@@ -315,11 +315,15 @@ div#singleyr a{
 	text-decoration: none;
 }
 
-a {
+a#expandlink, a#singleyr {
 	color:#FFFFFF;
 	/*color:#337ab7;*/
 }
 
 div#expandEarlierPos{
 	padding-top: 9%;
+	padding:2%;
+	background-color: #ef6156;
+	margin-top: 3%;
+    width: 54%;
 }
