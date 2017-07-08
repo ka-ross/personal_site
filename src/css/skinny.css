@@ -1,5 +1,6 @@
 header{
-	background-color: #990000;
+	/*background-color: #283c86;*/
+	background: linear-gradient(180deg, #00c3ff, #283c86);
 	height:100%;
 	overflow: visible;
 	text-align: center;
@@ -27,8 +28,10 @@ header #introRect {
 }
 
 div#introRect.jumbotron.text-center {
-	background-color: #990000; 
+	/*background-color: #990000;*/
 	color:#EDEBEB;
+	background-color : transparent;
+	/*background: linear-gradient(180deg, #00c3ff, #283c86);*/
 }
 
 div#resumeContent.jumbotron.text-center {
@@ -49,10 +52,11 @@ header .name {
 	color:#EDEBEB;
 }
 header .Desc{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-top: 12%;
-	letter-spacing: 2px;
+	letter-spacing: 3.5px;
 	color:#EDEBEB;
+	font-size: 18px;
 }
 
 header .school{
@@ -70,6 +74,10 @@ table.table tbody tr td {
 	border-top:none;
 }
 
+b,strong {
+	font-family: 'Raleway', sans-serif;
+}
+
 header .resume {
 	margin-top: 13%;
 } 
@@ -77,14 +85,14 @@ header .projects {
 	margin-top: 12%;
 } 
 header a{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size:26px;
 	text-decoration: none;
 	text-align: center;
 }
 
 header h3 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size:26px;
 	letter-spacing: 2px;
 }
@@ -99,7 +107,7 @@ header ul{
 header li{
 	margin-top: 3%;
 	list-style-type: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size:26px;
 	text-decoration: none;
 	text-align: center;
@@ -111,8 +119,9 @@ header li{
 section#about{
 	font-family: 'Raleway', sans-serif;
 	font-size:26px;
-	background-color: #006298;
-	color:#000000;
+	background: linear-gradient(180deg, #283c86, #EF3B36);
+	/*background-color: #006298;*/
+	color:#FFFFFF;
 	padding-bottom: 50px;
 	padding-left: 8%;
 	padding-right: 10%;
@@ -133,6 +142,7 @@ section.abt{
 }
 section#about p{	
 	text-align: center;
+	font-family: 'Quicksand', sans-serif;
 }
 
 section#about img.me{
@@ -155,10 +165,12 @@ section#about img.me{
  }
 
  section#resume {
- 	font-family: 'Raleway', sans-serif;
- 	background-color: #ACA39A;
+ 	/*font-family: 'Raleway', sans-serif;
+ 	/*background-color: #ACA39A;*/
+ 	font-family: 'Quicksand', sans-serif;
+ 	background: linear-gradient(180deg, #EF3B36,#ef473a);;
  	font-size: 16px;
- 	color:#847d76;
+ 	color:#FFFFFF;
  	width: 100%;
  	padding-left:4%;
  	padding-right:4%;
@@ -169,7 +181,7 @@ section#about img.me{
  section#resume h2.title{
  	/* padding-left:60%; */
  	text-align: center;
- 	color: #847d76;
+ 	color: #FFFFFF;
  }
 
  section#resume img#employer{
@@ -202,11 +214,11 @@ div#jobeven{
 	width:83%;
 	height:90%;
 	padding:2%;
-	background-color: #bfb4aa;
+	background-color: #ef6156;
 	/*border-radius: 20px;*/
 	margin-top: 8%;
 	margin-left: 2%;
-	box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
+	/*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
 	float:right;
 	display: inline-block;
 }
@@ -219,10 +231,11 @@ div#jobodd{
 	margin-left: 2%;
 	float:right;
 	display: inline-block;
+	background-color: #ef6156;
 }
 
 #jobdate {
-	background-color: #68a2ff;
+	background-color: #c1372c;
 	color: #FFFFFF;
 	position: relative;
 	float:left;
@@ -235,7 +248,7 @@ div#jobodd{
     margin-left: auto;
     text-align: center;
     font-size: 12px;
-    box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
+    /*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
 }
 
 #job-current{
@@ -282,6 +295,7 @@ div#jobodd{
 	border-left: thick dotted #847d76;
 	position: absolute;
   	z-index: 0;
+  	display: none;
 }
 #timeline p{
 	display: none;
@@ -317,6 +331,12 @@ div#years {
 	display: inline-block;
 	width:400px;
 	margin-bottom: 3%;
+
+}
+
+a#expandlink, a#singleyr {
+	color:#FFFFFF;
+	/*color:#337ab7;*/
 }
 
 div#singleyr{
@@ -325,4 +345,5 @@ div#singleyr{
 
 div#singleyr a{
 	text-decoration: none;
+	color:#FFFFFF;
 }

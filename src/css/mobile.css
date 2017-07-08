@@ -1,6 +1,7 @@
 header{
 	/*background-color: #990000;*/
 	background-color: #283c86;
+	background: linear-gradient(180deg, #00c3ff, #283c86);
 	height:100%;
 	overflow: visible;
 	text-align: center;
@@ -33,7 +34,9 @@ header #introRect {
 div#introRect.jumbotron.text-center {
 	/*background-color: #990000;*/
 	color:#EDEBEB;
-	background: linear-gradient(180deg, #00c3ff, #283c86);
+
+	background-color : transparent;
+	/*background: linear-gradient(180deg, #00c3ff, #283c86);*/
 }
 
 div#resumeContent.jumbotron.text-center {
@@ -53,8 +56,14 @@ header .name {
 	letter-spacing: 4px;
 	color:#EDEBEB;
 }
+
+b,strong {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
 header .Desc{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-top: 12%;
 	letter-spacing: 2px;
 	color:#EDEBEB;
@@ -66,6 +75,7 @@ header .school{
 a#subdesc {
 	text-decoration: none;
 }
+
 
 header .about {
 	margin-top: 18%;
@@ -104,7 +114,7 @@ header ul{
 header li{
 	margin-top: 3%;
 	list-style-type: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size:18px;
 	text-decoration: none;
 	text-align: center;
@@ -250,7 +260,8 @@ div#jobodd{
 }
 #jobd p{
 	font-size: 12px;
-	padding-left:19%
+	padding-left:19%;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 #jobdate:after {
