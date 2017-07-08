@@ -34,6 +34,7 @@ header #introRect {
 div#introRect.jumbotron.text-center {
 	/*background-color: #990000;*/
 	color:#EDEBEB;
+
 	background-color : transparent;
 	/*background: linear-gradient(180deg, #00c3ff, #283c86);*/
 }
