@@ -1,6 +1,7 @@
 header{
-	background-color: #990000;
-	/*background-color: #283c86;*/
+	/*background-color: #990000;*/
+	background-color: #283c86;
+	background: linear-gradient(180deg, #00c3ff, #283c86);
 	height:100%;
 	overflow: visible;
 	text-align: center;
@@ -12,6 +13,10 @@ p, h2, h3, body{
 	margin-top:0;
 	margin-bottom:0;
 	font-size: 18px;
+}
+
+body{
+	overflow-x:hidden;
 }
 
 .content {
@@ -27,9 +32,10 @@ header #introRect {
 }
 
 div#introRect.jumbotron.text-center {
-	background-color: #990000; 
-	color:#EDEBEB;*/
-	/*background: linear-gradient(180deg, #45a247, #283c86);*/
+	/*background-color: #990000;*/
+	color:#EDEBEB;
+	background-color : transparent;
+	/*background: linear-gradient(180deg, #00c3ff, #283c86);*/
 }
 
 div#resumeContent.jumbotron.text-center {
@@ -49,8 +55,14 @@ header .name {
 	letter-spacing: 4px;
 	color:#EDEBEB;
 }
+
+b,strong {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
 header .Desc{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	margin-top: 12%;
 	letter-spacing: 2px;
 	color:#EDEBEB;
@@ -62,6 +74,7 @@ header .school{
 a#subdesc {
 	text-decoration: none;
 }
+
 
 header .about {
 	margin-top: 18%;
@@ -100,7 +113,7 @@ header ul{
 header li{
 	margin-top: 3%;
 	list-style-type: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size:18px;
 	text-decoration: none;
 	text-align: center;
@@ -113,9 +126,9 @@ section#about{
 	font-family: 'Raleway', sans-serif;
 	height: 600px;
 	font-size:20px;
-	/*background: linear-gradient(180deg, #283c86, #EF3B36);*/
-	background-color: #006298;
-	color:#000000;
+	background: linear-gradient(180deg, #283c86, #EF3B36);
+	/*background-color: #006298;*/
+	color:#FFFFFF;
 	padding-bottom: 50px;
 	padding-left: 8%;
 	padding-right: 10%;
@@ -147,17 +160,19 @@ section#about img.me{
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
+
  }
 
  section#resume {
  	font-family: 'Raleway', sans-serif;
- 	background-color: #ACA39A;
- 	/*background: linear-gradient(180deg, #EF3B36,#ef473a);*/
+ 	/*background-color: #ACA39A;*/
+ 	background: linear-gradient(180deg, #EF3B36,#ef473a);
  	font-size: 14px;
- 	color:#847d76;
+ 	color:#FFFFFF;
  	width: 100%;
  	padding-left:4%;
  	padding-right:4%;
+ 	overflow-x: hidden;
  	/* padding-bottom: 3%;
  	/* text-align: center;*/
  }
@@ -180,11 +195,11 @@ div#jobeven{
 	width:100%;
 	height:80%;
 	padding:2%;
-	background-color: #bfb4aa;
+	background-color: #ef6156;
 	/*border-radius: 20px;*/
 	margin-top: 20px;
 	margin-left: 5px;
-	box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
+	/*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
 	position: relative;
 	/*float:right;
 	display: inline-block;*/
@@ -194,8 +209,8 @@ div#jobodd{
 	width:100%;
 	height:80%;
 	padding:2%;
-	background-color: #bfb4aa;
-	box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
+	background-color: #ef6156;
+	/*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
 	/*border-radius: 20px;*/
 	margin-top: 20px;
 	margin-left: 5px;
@@ -203,7 +218,7 @@ div#jobodd{
 }
 
 #jobdate {
-	background-color: #68a2ff;
+	background-color: #c1372c;
 	color: #FFFFFF;
 	position: relative;
 	width:80px;
@@ -215,7 +230,9 @@ div#jobodd{
     margin-left
     text-align: center;
     font-size: 12px;
-    box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
+    /*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
+    box-shadow: 0.4em 0.4em 1em -0.2em #912a22;
+    
 }
 
 #job-current{
@@ -242,7 +259,8 @@ div#jobodd{
 }
 #jobd p{
 	font-size: 12px;
-	padding-left:19%
+	padding-left:19%;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 #jobdate:after {
@@ -261,10 +279,11 @@ div#jobodd{
 	padding-bottom:114%;
 	margin-left: 9%;
 	margin-top: 17%;
-	color:#847d76;
-	border-left: thick dotted #847d76;
+	color:#FFFFFF;
+	border-left: thick dotted #FFFFFF;
 	position: absolute;
   	z-index: 0;
+  	display:none;
 }
 #timeline p{
 	display: none;
@@ -306,6 +325,15 @@ div#singleyr a{
 	text-decoration: none;
 }
 
+a#expandlink, a#singleyr {
+	color:#FFFFFF;
+	/*color:#337ab7;*/
+}
+
 div#expandEarlierPos{
 	padding-top: 9%;
+	padding:2%;
+	background-color: #ef6156;
+	margin-top: 3%;
+    width: 54%;
 }
