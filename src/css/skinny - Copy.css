@@ -1,0 +1,451 @@
+header{
+	/*background-color: #283c86;*/
+	background: linear-gradient(180deg,#FFA17F, #304352);
+	height:100%;
+	overflow: visible;
+	text-align: center;
+
+	padding-left:1%;
+	padding-right:1%;
+	padding-top:4.5%;
+}
+
+p, h2, h3, body{
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	margin-bottom:0;
+	font-size: 18px;
+}
+
+.content {
+	height:100%;
+}
+
+
+header #introRect {
+	position:relative;
+	left: 50%;
+	width: 800px;
+    height: 1000px;
+    margin-left: -400px;
+    margin-top: -70px;
+}
+
+.jumbotron p{
+	/*background: linear-gradient(180deg,#FFA17F, #304352);
+	color: transparent;*/
+	color:#977268;
+	-webkit-background-clip: text;
+}
+
+div#introRect.jumbotron.text-center {
+	/*background-color: #990000;*/
+	color:#977268;
+	-webkit-background-clip: text;
+	/*background: linear-gradient(180deg, #00c3ff, #283c86);*/
+}
+
+div#introRect.jumbotron.text-center h1, h3{
+
+	background: linear-gradient(180deg, #FFA17F, #AC7B6D);*/
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+h3#subdesc.Desc{
+	background: linear-gradient(180deg,#AC7B6D, #977268);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+div#resumeContent.jumbotron.text-center {
+	background-color: #ACA39A;
+}
+
+h1.name {
+	padding-top: 200px;
+}
+
+header .name {
+	margin:0;
+	margin-top:20px;
+	margin-bottom: 15px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 55px;
+	letter-spacing: 6px;
+	color:#EDEBEB;
+}
+header .Desc{
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 12%;
+	letter-spacing: 3.5px;
+	font-size: 18px;
+}
+
+header .school{
+	margin-top: 15%;
+}
+a#subdesc {
+	text-decoration: none;
+}
+
+header .about {
+	margin-top: 18%;
+}
+
+table.table tbody tr td {
+	border-top:none;
+}
+
+b,strong {
+	font-family: 'Raleway', sans-serif;
+}
+
+header .resume {
+	margin-top: 13%;
+} 
+header .projects {
+	margin-top: 12%;
+} 
+header a{
+	font-family: 'Quicksand', sans-serif;
+	font-size:26px;
+	text-decoration: none;
+	text-align: center;
+}
+
+header h3 {
+	font-family: 'Quicksand', sans-serif;
+	font-size:26px;
+	letter-spacing: 2px;
+}
+
+header ul{
+	padding-left: 0;
+	margin-top: 4%;
+	list-style: none;
+	width:100%;
+}
+
+header li{
+	margin-top: 3%;
+	list-style-type: none;
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	text-decoration: none;
+	text-align: center;
+	color:#EDEBEB;
+	/*letter-spacing: 2px;*/
+
+}
+
+#introSection{
+	background:#F2F2F2;
+	border-radius: 15px;
+}
+div#introRect {
+	background: linear-gradient(180deg,#FFA17F, #304352);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+section#about{
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	background: linear-gradient(180deg, #304352,#363795);
+	/*background-color: #006298;
+	color:#FFFFFF;*/
+	padding-bottom: 50px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.title{
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 5px;
+	/*top:50%;*/
+	padding-top:5%;
+	padding-bottom: 3%;
+	font-size: 55px;
+	padding-left:40%;
+	padding-right:40%;
+	-webkit-background-clip: text;
+}
+section.abt{
+	padding-left: 5%;
+}
+section#about p{	
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+
+section#about img.me{
+	display: block;
+
+    height: 100%;
+    width: auto;
+
+ }
+
+div.aboutContent{
+ 	background: #fafafa;
+ 	height:100%;
+ 	border-radius: 15px;
+ 	padding:4%;
+}
+div.aboutContent p{
+ 	padding-left:11%;
+ 	padding-right:11%;
+
+ 	background: linear-gradient(180deg, #304352,#363795);
+ 	color: transparent;
+ 	-webkit-background-clip: text;
+
+}
+ 
+
+section#about p{
+ 	font-family: 'Quicksand', sans-serif;
+ 	text-align: center;
+}
+
+section#about div#pic{
+ 	width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+#kr_instafeed{
+  list-style:none  
+}
+#kr_instafeed li{
+  float:left;
+  width:300px;
+  height:300px;
+  margin:10px
+}
+#kr_instafeed li img{
+  max-width:80%;
+  max-height: 80%;
+  border-radius: 15px;
+}
+
+
+
+ul#kr_instafeed {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul#kr_instafeed li {
+  display: inline-block;
+  /*height: 150px;*/
+  margin: 0 -1.5em 0 0;
+  position: relative;
+  /*width: 150px;*/
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 240px;
+  left: 29px;
+  position: absolute;
+  top: 0;
+  width: 240px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  border-radius: 15px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5%;
+}
+
+ul#kr_instafeed li:hover span.text-content {
+  opacity: 1;
+}
+
+div#photobox{
+	margin-top: 5%;
+	margin-bottom: 20%;
+	margin-left: 6%;
+	font-size: 14px;
+	padding-bottom: 5%;
+}
+
+section#resume {
+ 	/*font-family: 'Raleway', sans-serif;
+ 	/*background-color: #ACA39A;*/
+ 	font-family: 'Quicksand', sans-serif;
+ 	background: linear-gradient(180deg, #363795, #614385);
+ 	font-size: 16px;
+ 	color:#FFFFFF;
+ 	width: 100%;
+ 	padding-left:1%;
+ 	padding-right:1%;
+ 	padding-bottom: 1%;
+}
+
+a#downloadResume{
+	text-decoration: none;
+}
+
+a#downloadResume:hover{
+	opacity: .5;
+}
+
+#resumeText {
+	/*background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.2), #de7006),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzQwMCcgaGVpZ2h0PSc0MDAnPgoJPGRlZnMgaWQ9J2RlZnM0Jz4KCQk8ZmlsdGVyIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQicgaWQ9J2ZpbHRlcjMxMTUnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgbnVtT2N0YXZlcz0nMScgYmFzZUZyZXF1ZW5jeT0nMC45JyBpZD0nZmVUdXJidWxlbmNlMzExNycgLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSdyZXN1bHQ1JyB2YWx1ZXM9JzEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDYgLTMuNzUgJyBpZD0nZmVDb2xvck1hdHJpeDMxMTknIC8+CgkJCTxmZUNvbXBvc2l0ZSBpbjI9J3Jlc3VsdDUnIG9wZXJhdG9yPSdpbicgaW49J1NvdXJjZUdyYXBoaWMnIHJlc3VsdD0ncmVzdWx0NicgaWQ9J2ZlQ29tcG9zaXRlMzEyMScgLz4KCQkJPGZlTW9ycGhvbG9neSBpbj0ncmVzdWx0Nicgb3BlcmF0b3I9J2RpbGF0ZScgcmFkaXVzPScxMCcgcmVzdWx0PSdyZXN1bHQzJyBpZD0nZmVNb3JwaG9sb2d5MzEyMycgLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHg9JzAnIHk9JzAnIGlkPSdyZWN0Mjk4NScgZmlsbD0nI2VlZWVlZScvPiAgICAgCgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4PScwJyB5PScwJyBpZD0ncmVjdDI5ODUnIHN0eWxlPSdmaWxsOiNlMDg3Mjg7ZmlsdGVyOnVybCgjZmlsdGVyMzExNSknIC8+Cjwvc3ZnPg==);
+	*/background: linear-gradient(to bottom, #363795, #614385);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+div#ResumeContent { 
+	padding:4%;
+	background: #fafafa;	
+	border-radius: 15px;
+}
+
+section#resume h2.title{
+ 	/* padding-left:60%; */
+ 	text-align: center;
+ 	/*color: #FFFFFF;*/
+}
+
+section#resume img#employer{
+ 	width:100%;
+ 	/*max-height: 200px;
+ 	max-width:200px;*/
+}
+
+section#resume td.jobdesc p{
+ 	/*text-align: left;*/
+}
+
+
+tr#even {
+	background-color: #847d76;
+	/* border-width:2px;
+	border-radius: 2px/1px;
+	border-radius:40px 10px 10px 40px;*/
+	border:10px solid #847d76;
+}
+
+
+
+
+td#empImg{
+	width:20%;
+}
+
+
+#jobd{
+	display: block;
+    height: 100%;
+    width: 90%;
+    padding-top: 26%;
+	padding-bottom: 2%;
+	padding-left: 0%;
+}
+
+#jobd p{
+	font-size: 12px;
+	padding-left:14%;
+	padding-top:2%;
+}
+
+#jobdate:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  bottom: -10px;
+  left: 50%;
+  border-left: 3px dotted #ff0000;
+  
+}
+
+
+
+#resume-row{
+	display: inline-block;
+	width:95%;
+	padding-left: 9%;
+	padding-right:1%;
+	padding-bottom: 2%;
+}
+
+
+div#words{
+	/*width:70%;
+	padding-top: 2%;*/
+	float:left;
+	width:80%;
+	padding-left: 4%;
+	/*word-wrap: break-word;*/
+}
+
+div#jobpic{
+	width:220px;
+	height:220px;
+	float:left;
+	padding-top: 3%;
+}
+
+div#jobpic img{
+	width:100%;
+	border-radius: 15px;
+}
+
+
+div#years {
+	display: inline-block;
+	width:400px;
+	margin-bottom: 3%;
+
+}
+
+a#expandlink, a#singleyr {
+	color:#FFFFFF;
+	/*color:#337ab7;*/
+}
+
+div#singleyr{
+	padding-left: 2%;
+}
+
+div#singleyr a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+
+a#resume-link {
+
+	text-decoration: none;
+	background: linear-gradient(to bottom, #363795, #614385);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+

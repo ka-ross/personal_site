@@ -92,7 +92,7 @@ header a{
 }
 
 header h3 {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size:26px;
 	letter-spacing: 2px;
 }
@@ -291,8 +291,8 @@ div#jobodd{
 	padding-bottom:13%;
 	margin-left: 4%;
 	margin-top: 17%;
-	color:#847d76;
-	border-left: thick dotted #847d76;
+	color:#ef473a;
+	border-left: thick dotted #ef473a;
 	position: absolute;
   	z-index: 0;
   	display: none;

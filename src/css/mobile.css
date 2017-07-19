@@ -58,7 +58,7 @@ header .name {
 }
 
 b,strong {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 
@@ -92,7 +92,7 @@ header .projects {
 	margin-top: 12%;
 } 
 header a{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size:18px;
 	text-decoration: none;
 	text-align: center;
@@ -114,7 +114,7 @@ header ul{
 header li{
 	margin-top: 3%;
 	list-style-type: none;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size:18px;
 	text-decoration: none;
 	text-align: center;
@@ -144,6 +144,10 @@ section#about{
 	text-align: center;
 }
 
+section#about p{	
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
 
 section#about img.me{
 	display: block;
@@ -165,7 +169,7 @@ section#about img.me{
  }
 
  section#resume {
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Quicksand', sans-serif;
  	/*background-color: #ACA39A;*/
  	background: linear-gradient(180deg, #EF3B36,#ef473a);
  	font-size: 14px;
@@ -261,7 +265,6 @@ div#jobodd{
 #jobd p{
 	font-size: 12px;
 	padding-left:19%;
-	font-family: 'Josefin Sans', sans-serif;
 }
 
 #jobdate:after {

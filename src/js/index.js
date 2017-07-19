@@ -23,12 +23,12 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
 
  function loadUp(){
         console.log("works");
-        $('div.aboutContent').fadeOut(1);
+        //$('div.aboutContent').fadeOut(1);
         $('div#ResumeContent').fadeOut(1);
         $('div#expandEarlierPos').fadeOut(1);
         $('div#expandEarlierPos').css("color", "#FFFFFF");
-        $(".buttonUnfold").slideUp(1);
-        $('.datebutton').animate({'margin-left':'40%'}, {duration: 10, queue:false});
+        //$(".buttonUnfold").slideUp(1);
+        //$('.datebutton').animate({'margin-left':'40%'}, {duration: 10, queue:false});
         //$('a#expandlink').fadeOut(1);
         //$('a#expandlink').css("color", "#000000");
         //window.scrollTo(0,0);
@@ -142,7 +142,7 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
             
         });
 
-        $(".datebutton").click(function() {
+        /*$(".datebutton").click(function() {
             if(serveitShow === 0) {
                 $(".buttonUnfold").slideDown(2000);
                 $(this).animate({'margin-left':'0%'}, {duration: 2000, queue:true});
@@ -155,7 +155,7 @@ document.getElementsByClassName('about')[0].addEventListener("click", () => {
                 //$(this).css("padding-left", "30%");
                 serveitShow = 0;
             }
-        });
+        });*/
 
  }
 
