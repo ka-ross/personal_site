@@ -1,7 +1,5 @@
 header{
-	/*background-color: #990000;*/
-	background-color: #283c86;
-	background: linear-gradient(180deg, #00c3ff, #283c86);
+	background-color: #990000;
 	height:100%;
 	overflow: visible;
 	text-align: center;
@@ -12,12 +10,13 @@ p, h2, h3, body{
 	margin-right:0;
 	margin-top:0;
 	margin-bottom:0;
-	font-size: 18px;
 }
 
-body{
-	overflow-x:hidden;
+html, body { 
+	min-height: 100%;
+	overflow: auto;
 }
+
 
 .content {
 	height:100%;
@@ -26,44 +25,37 @@ body{
 
 header #introRect {
 	position:relative;
-	width: 100%;
-    height: 700px;
-    margin-top: -30px;
+	left: 50%;
+	width: 800px;
+    height: 1000px;
+    margin-left: -400px;
+    margin-top: -70px;
 }
 
 div#introRect.jumbotron.text-center {
-	/*background-color: #990000;*/
+	background-color: #990000; 
 	color:#EDEBEB;
-
-	background-color : transparent;
-	/*background: linear-gradient(180deg, #00c3ff, #283c86);*/
 }
 
 div#resumeContent.jumbotron.text-center {
-	/*background-color: #ACA39A;*/
-	/*background: linear-gradient(180deg, #283c86, #EF3B36);*/
+	background-color: #ACA39A;
 }
 
 h1.name {
-	padding-top: 40%;
+	padding-top: 200px;
 }
 
 header .name {
 	margin:0;
+	margin-top:20px;
 	margin-bottom: 15px;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 35px;
-	letter-spacing: 4px;
+	font-size: 55px;
+	letter-spacing: 6px;
 	color:#EDEBEB;
 }
-
-b,strong {
-	font-family: 'Raleway', sans-serif;
-}
-
-
 header .Desc{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	margin-top: 12%;
 	letter-spacing: 2px;
 	color:#EDEBEB;
@@ -75,7 +67,6 @@ header .school{
 a#subdesc {
 	text-decoration: none;
 }
-
 
 header .about {
 	margin-top: 18%;
@@ -92,30 +83,29 @@ header .projects {
 	margin-top: 12%;
 } 
 header a{
-	font-family: 'Quicksand', sans-serif;
-	font-size:18px;
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
 	text-decoration: none;
 	text-align: center;
 }
 
 header h3 {
 	font-family: 'Raleway', sans-serif;
-	font-size:18px;
+	font-size:26px;
 	letter-spacing: 2px;
 }
 
 header ul{
-	text-align: center;
-	margin-top: 2%;
+	padding-left: 0;
 	list-style: none;
-	width:90%;
+	width:100%;
 }
 
 header li{
 	margin-top: 3%;
 	list-style-type: none;
 	font-family: 'Raleway', sans-serif;
-	font-size:18px;
+	font-size:26px;
 	text-decoration: none;
 	text-align: center;
 	color:#EDEBEB;
@@ -125,39 +115,51 @@ header li{
 
 section#about{
 	font-family: 'Raleway', sans-serif;
-	height: 600px;
-	font-size:20px;
-	background: linear-gradient(180deg, #283c86, #EF3B36);
-	/*background-color: #006298;*/
-	color:#FFFFFF;
+	font-size:26px;
+	background-color: #006298;
+	color:#000000;
 	padding-bottom: 50px;
 	padding-left: 8%;
-	padding-right: 10%;
-	text-align: center;
+	padding-right: 8%;
 }
 
 .title{
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: 5px;
+	/*top:50%;*/
+	padding-top:5%;
 	padding-bottom: 3%;
 	font-size: 55px;
+	padding-left:40%;
+	padding-right:40%;
 	text-align: center;
 }
-
-section#about p{	
-	text-align: center;
-	font-family: 'Quicksand', sans-serif;
+section.abt{
+	padding-left: 5%;
+}
+section#about ap{
+	/*use of this call was depricated*/
+	
+	width:780px;
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-bottom: 50px;
 }
 
 section#about img.me{
 	display: block;
+
     height: 100%;
     width: auto;
 
  }
  section#about div#pic{
- 	width: 150px;
-    height: 150px;
+ 	width: 250px;
+    height: 250px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -165,23 +167,64 @@ section#about img.me{
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
-
  }
 
  section#resume {
- 	font-family: 'Quicksand', sans-serif;
- 	/*background-color: #ACA39A;*/
- 	background: linear-gradient(180deg, #EF3B36,#ef473a);
- 	font-size: 14px;
- 	color:#FFFFFF;
+ 	font-family: 'Raleway', sans-serif;
+ 	background-color: #ACA39A;
+ 	font-size: 20px;
+ 	color:#847d76;
  	width: 100%;
- 	padding-left:4%;
- 	padding-right:4%;
- 	overflow-x: hidden;
+ 	padding-left:8%;
+ 	padding-right:8%;
  	/* padding-bottom: 3%;
  	/* text-align: center;*/
  }
+/*
+ section#resume ap {
+ 	width:780px;
+	font-family: 'Raleway', sans-serif;
+	font-size:26px;
+	margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-bottom: 50px;
+ }
 
+ section#resume div#resumeContent {
+ 	/*position:relative;
+	top: 50px;
+	width: 800px;
+    height: 1000px;
+     margin-left: -400px; 
+    margin-top: -70px;
+ }*/
+ section#resume h2.title{
+ 	/* padding-left:60%; */
+ 	color: #847d76;
+ }
+
+ section#resume img#employer{
+ 	width:100%;
+ 	/*max-height: 200px;
+ 	max-width:200px;*/
+ }
+
+ section#resume div.tab{
+ 	/*padding-left:10%;
+ 	padding-right:10%;
+ 	padding-bottom: 5%;
+ 	margin-left: 10%;
+ 	font-family: 'Raleway', sans-serif;
+	font-size:18px;*/
+ }
+
+;
+
+ section#resume td.jobdesc p{
+ 	/*text-align: left;*/
+ }
 
 
 tr#even {
@@ -192,79 +235,70 @@ tr#even {
 	border:10px solid #847d76;
 }
 
-td#empImg{
-	width:20%;
-}
 
 div#jobeven{
-	width:100%;
-	height:80%;
+	width:80%;
+	height:280px;
 	padding:2%;
-	background-color: #ef6156;
+	background-color: #bfb4aa;
 	/*border-radius: 20px;*/
 	margin-top: 20px;
-	margin-left: 5px;
-	/*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
-	position: relative;
-	/*float:right;
-	display: inline-block;*/
+	box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
+	display: inline-block;
+	float:right;
+
 }
 
 div#jobodd{
-	width:100%;
-	height:80%;
+	width:80%;
+	height:280px;
 	padding:2%;
-	background-color: #ef6156;
-	/*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
-	/*border-radius: 20px;*/
 	margin-top: 20px;
-	margin-left: 5px;
-	position: relative;
+	display: inline-block;
+	float:right;
 }
 
 #jobdate {
-	background-color: #c1372c;
+	background-color: #68a2ff;
 	color: #FFFFFF;
+	width:auto;
 	position: relative;
-	width:80px;
-	height: 80px;
+	float:left;
+	width:115px;
+	height: 115px;
+	
 	border-radius: 50%;
     margin-top: 5%;
     margin-right: auto;
     margin-bottom: 20px;
-    margin-left
+    margin-left: auto;
     text-align: center;
-    font-size: 12px;
-    /*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
-    box-shadow: 0.4em 0.4em 1em -0.2em #912a22;
-    
+    font-size: 15px;
+    box-shadow: 0.4em 0.4em 1em -0.2em #847d76;
 }
 
 #job-current{
 	display: block;
     height: 100%;
     width: auto;
-    padding-top: 24%;
+    padding-top: 39%;
 	padding-bottom: 2%;
-	padding-left: 2%;
-	text-align: center;
+	padding-left: 0%;
 }
 
-#job-current p{
-	font-size: 12px;
+#jobd p{
+	width: 87px;
+    padding-left: 20%;
+    text-align: center;
 }
 
 #jobd{
 	display: block;
     height: 100%;
     width: auto;
-    padding-top: 26%;
+    padding-top: 27%;
 	padding-bottom: 2%;
 	padding-left: 0%;
-}
-#jobd p{
-	font-size: 12px;
-	padding-left:19%;
 }
 
 #jobdate:after {
@@ -279,65 +313,53 @@ div#jobodd{
 }
 
 #timeline{
-	padding-top: 13%;
-	padding-bottom:114%;
-	margin-left: 9%;
-	margin-top: 17%;
-	color:#FFFFFF;
-	border-left: thick dotted #FFFFFF;
+	padding-bottom:13%;
+	margin-left: 3%;
+	margin-top: 8%;
+	color:#847d76;
+	border-left: thick dotted #847d76;
 	position: absolute;
   	z-index: 0;
-  	display:none;
 }
 #timeline p{
 	display: none;
 }
 
 #resume-row{
-	width: 96%;
+	display: inline-block;
 }
 
 
 div#words{
-	padding-top: 10px;
-	padding-left: 20px;
-	width:100%;
-	word-wrap: break-word;
-
+	float: left;
+    width: 80%;
 }
 div#jobpic{
-	width:250px;
-	margin-bottom: 5%;
+	width:220px;
+	height:220px;
+	float:right;
+	padding-top: 2%;
 }
 div#jobpic img{
-	padding-left: 5%;
-	padding-top: 20px;
 	width:100%;
-	display:none;
 }
+
 div#years {
 	display: inline-block;
-	width:370px;
+	width:400px;
 	margin-bottom: 3%;
+	/*text-align: center;*/
 }
 
 div#singleyr{
-	padding-left: 2%;
+	/*float: center;*/
+	padding-left: 2%
 }
 
-div#singleyr a{
+a#singleyr {
 	text-decoration: none;
 }
 
-a#expandlink, a#singleyr {
-	color:#FFFFFF;
-	/*color:#337ab7;*/
-}
-
 div#expandEarlierPos{
-	padding-top: 9%;
-	padding:2%;
-	background-color: #ef6156;
-	margin-top: 3%;
-    width: 54%;
+	padding-top: 3%;
 }

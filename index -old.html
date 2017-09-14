@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link href="src/css/mobile.css" rel="stylesheet" media="(max-width: 799px)">
+    	<link href="src/css/skinny.css" rel="stylesheet" media="(min-width:800px) and (max-width: 1772px)">
+  		<link href="src/css/home.css" rel="stylesheet" media="(min-width: 1773px)">
+  		<!-- <link href="skinny.css" rel="stylesheet" media="(max-width: 800px)"> -->
+
+  		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Raleway:600" rel="stylesheet">
+  		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+		<title>Kyle A. Ross | Software Developer</title>
+		<!-- Bootstrap -->
+		<link href="src/js/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="src/js/index.js"></script>
+		<script src="src/js/instag.js"></script>
+		<script src="src/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+	</head>
+	<body style="overflow-x:hidden">
+	<div class="content">
+		<header>
+			<div id="introRect" class="jumbotron text-center">
+				<h1 letter-spacing="0px"class="name" style="opacity:0; letter-spacing:0px;">KYLE ROSS</h1>
+				<h3 class="Desc" id="subdesc" style="opacity:0;">Software Engineer, Process Integrator</h3>
+				<ul style="opacity:0; letter-spacing:0px;" id="homeList">
+					<a href='#about' id="subdesc"><li class='about'>About</li></a>
+					<a href='#resume' id="subdesc"><li class='resume'>Resume</li></a>
+					<a href='#projects' id="subdesc"><li class='projects'>Projects</li></a>
+				</ul>
+			</div>
+			<i style="opacity:0">Nextpage</i>
+		</header>
+		<section id="about" >
+		<!-- <section class="abt"> -->
+			<i id='startAbout' style="opacity:0">A</i>
+			<!-- <div class="aboutContent"  style="display:none" > -->
+			<div class="aboutContent">
+				<h2 class='title'>ABOUT</h2>
+				<div id='pic'>
+					<img src="res/me.jpg" class="me">
+				</div>
+				<!-- <p class='words'> -->
+				<p>
+
+					My name is Kyle Ross, and I am a Computer Science major from Indiana University's School of Informatics and Computing. I received a specialization in Embedded Systems Hardware, with minors in both Spanish and Business. Outside of work, I enjoy hiking, cooking, photography, and I collect Vinyl Records. 
+				</p>
+				<p>Check out my latest Instagram Posts!</p>
+				<div id="photobox">
+					<ul id="kr_instafeed" style="opacity:0;"></ul>
+				</div>
+			</div>
+			<i id='endAbout' style="opacity:0">A</i>
+		</section>
+		<section id='resume'>
+			<i id='startResume' style="opacity:0">R</i>
+				<div id="ResumeContent">
+				<h2 class='title'>RESUME</h2>
+				<center><div id='years'>
+					<!-- <div id="singleyr" style="float:left;"> 2016 </div>
+					<div id="singleyr" style="float:left;"> <a href="#fifteen">2015</a> </div>
+					<div id="singleyr" style="float:left;"> <a href="#fourteen">2014 </a> </div> -->
+					
+						2016 -     
+						<a href="#fifteen" id='resume-link'> 2015 </a> 
+						-
+						<a href="#fourteen" id='resume-link'> 2014 </a>
+					
+				</div></center>
+				<div id='resume-row'>
+					<div id='timeline'><p>This is the timeline!<p></div>
+					<div id='jobdate'>
+						<div id='job-current'><p>JAN '16 -CURRENT</p>
+						</div>
+					</div>
+
+					<div id="jobodd">
+						<div id="words" >
+							<h3>
+								<b>Software Engineer Asc.</b></h3>
+							<h4><b>Lockheed Martin Aeronautics - Fort Worth, TX</b></h4>
+							<p> Performed tasks as a Software Tester, Scrum Master, Process Integrator, and Scrum of Scrums Leader. These roles provided experiences in writing Requirements/Testing Documentation, Automated Testing Scripts, and Consulting on organization's official Software Development Process.</p>
+						</div>
+						<div id='jobpic'>
+							<img src='res/lockheed-logo.png' >
+
+						</div>
+					</div>
+					
+				</div>
+				
+				<div id='resume-row'>
+					<div id='timeline'><p>This is the timeline!<p></div>
+					<div id='jobdate'>
+						<div id='jobd'><p>JUN '15 -DEC '15</p></div>
+					</div>
+					<div id="jobodd" >
+						<div id="words" >
+							<h3>
+								<b>Research Assistant</b></h3>
+							<h4><b>School of Informatics and Computing, Indiana University Bloomington - Bloomington, IN</b></h4>
+							<p>
+								Improved a low-power hardware design, specifically created for the Indiana Department of Natural Resources to monitor trail usage, and allow for the hardware to run effectively for weeks to months longer than the prototype could.  Developed and calibrated the hardware interrupts for an accelerometer on the STM32F3 Discovery Board.
+							</p>
+						</div>
+						<div id='jobpic'>
+							<img src='res/iu.png'>
+						</div>
+					</div>
+					<i id="fifteen"></i>
+				</div>
+					
+					<div id='resume-row' >
+					<div id='timeline' class="tline_three"style="opacity:0;"><p>This is the timeline!<p></div>
+					<div id='jobdate'  class="datebutton">
+						<div id='jobd'><p>AUG '14 - DEC '14 </p>
+						</div>
+					</div>
+
+					<div id="jobodd" class="buttonUnfold">
+						<div id="words">
+							<h3>
+								<b>Project Leader</b></h3>
+							<h4><b>ServeIT Nonprofit Clinic, Indiana University Bloomington - Bloomington, IN</b></h4>
+							<p>Managed over a team of fellow students, with the Buskirk-Chumley Theater (BCT) non-profit organization, to create an Availability Calendar, to save the time of both potential event renters as well as theater administration.Delegated research and report tasks to the team to complete a Research and Integration Report to consolidate their two-site ticket sale system.</p>
+						</div>
+						<div id='jobpic'>
+							<img src='res/serveit.png' >
+
+						</div>
+					</div>
+					<i id="fourteen"></i>
+				</div>
+
+				<div id='resume-row' >
+					<div id='timeline' class="tline_four"style="display:none;"><p>This is the timeline!<p></div>
+					<div id='earlierPos'>
+						<div id='jobdate'>
+						<div id='jobd'><p>MAY '14 - AUG '14 </p>
+						</div>
+					</div>
+						<div id="jobodd" >
+							<div id="words">
+								<h3>
+									<b>IT Manager</b></h3>
+								<h4><b>Michael Wall Engineering, San Diego, CA</b></h4>
+								<p> Provided management a Cost Analysis for various needs of the firm, including a backup system using a RAID data storage system, as well as created a simple database on which files have been archived</p>
+							</div>
+							<div id='jobpic'>
+							<img src='res/MWE.png' >
+							</div>
+						</div>
+					</div>
+				</div>
+
+				</div>
+				<center>
+					<div id='expandEarlierPos' >
+						<a href="#endResume" style='text-decoration:none; ' id="resume-link">Expand Earlier Positions </a>
+					</div>
+				</center>
+				<i class='endResume' style="opacity:0">B</i>
+			<!--</div> table responsive--> 
+			
+		</section>
+		<!--<section id='extras'>
+			<i id='startextras' style="opacity:0">R</i>
+			<div id="extrasContent">
+				<h2 class='title'>EXTRACURRICULAR</h2>
+				<p>Check out my latest Instagram Posts!</p>
+				<div id="photobox">
+					<ul id="kr_instafeed" style="opacity:0;"></ul>
+				</div>
+			</div>
+			<i class='endResume' style="opacity:0">B</i>	
+		</section>-->
+	</div>
+	</body>
+
+
+</html>

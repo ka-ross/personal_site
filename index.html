@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    	<link href="src/css/mobile.css" rel="stylesheet" media="(max-width: 799px)">
-    	<link href="src/css/skinny.css" rel="stylesheet" media="(min-width:800px) and (max-width: 1772px)">
-  		<link href="src/css/home.css" rel="stylesheet" media="(min-width: 1773px)">
+    	<link href="src/css/mobile - Copy.css" rel="stylesheet" media="(max-width: 799px)">
+    	<link href="src/css/skinny - Copy.css" rel="stylesheet" media="(min-width:800px) and (max-width: 1772px)">
+  		<link href="src/css/home - Copy.css" rel="stylesheet" media="(min-width: 1773px)">
   		<!-- <link href="skinny.css" rel="stylesheet" media="(max-width: 800px)"> -->
 
   		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Raleway:600" rel="stylesheet">
@@ -24,14 +24,16 @@
 	<body style="overflow-x:hidden">
 	<div class="content">
 		<header>
+			<div id="introSection">
 			<div id="introRect" class="jumbotron text-center">
 				<h1 letter-spacing="0px"class="name" style="opacity:0; letter-spacing:0px;">KYLE ROSS</h1>
 				<h3 class="Desc" id="subdesc" style="opacity:0;">Software Engineer, Process Integrator</h3>
 				<ul style="opacity:0; letter-spacing:0px;" id="homeList">
-					<a href='#about' id="subdesc"><li class='about'>About</li></a>
-					<a href='#resume' id="subdesc"><li class='resume'>Resume</li></a>
-					<a href='#projects' id="subdesc"><li class='projects'>Projects</li></a>
+					<a href='#about' id="subdesc"><li class='about'><p>About</p></li></a>
+					<a href='#resume' id="subdesc"><li class='resume'><p>Resume</p></li></a>
+					<a href='#projects' id="subdesc"><li class='projects'><p>Projects</p></li></a>
 				</ul>
+			</div>
 			</div>
 			<i style="opacity:0">Nextpage</i>
 		</header>
@@ -59,110 +61,76 @@
 		<section id='resume'>
 			<i id='startResume' style="opacity:0">R</i>
 				<div id="ResumeContent">
-				<h2 class='title'>RESUME</h2>
+				<h2 class='title'  id="resumeText">RESUME</h2>
 				<center><div id='years'>
 					<!-- <div id="singleyr" style="float:left;"> 2016 </div>
 					<div id="singleyr" style="float:left;"> <a href="#fifteen">2015</a> </div>
 					<div id="singleyr" style="float:left;"> <a href="#fourteen">2014 </a> </div> -->
 					
-						2016 -     
+						<a href="#sixteen" id='resume-link'>2016 - </a>
 						<a href="#fifteen" id='resume-link'> 2015 </a> 
-						-
-						<a href="#fourteen" id='resume-link'> 2014 </a>
+						
+						<a href="#fourteen" id='resume-link'>- 2014 </a>
+						<p><a href="#" id="downloadResume"> Download PDF Version </a> </p>
 					
 				</div></center>
 				<div id='resume-row'>
-					<div id='timeline'><p>This is the timeline!<p></div>
-					<div id='jobdate'>
-						<div id='job-current'><p>JAN '16 -CURRENT</p>
-						</div>
-					</div>
-
-					<div id="jobodd">
-						<div id="words" >
-							<h3>
-								<b>Software Engineer Asc.</b></h3>
-							<h4><b>Lockheed Martin Aeronautics - Fort Worth, TX</b></h4>
-							<p> Performed tasks as a Software Tester, Scrum Master, Process Integrator, and Scrum of Scrums Leader. These roles provided experiences in writing Requirements/Testing Documentation, Automated Testing Scripts, and Consulting on organization's official Software Development Process.</p>
-						</div>
 						<div id='jobpic'>
 							<img src='res/lockheed-logo.png' >
-
+							<!--<img id= src='res/f35assembly.jpg' > -->
 						</div>
-					</div>
-					
+         				<div id="words" >
+							<h3>
+								<b  id="resumeText">Software Engineer Asc.</b></h3>
+							<h4><b  id="resumeText">Lockheed Martin Aeronautics - Fort Worth, TX</b></h4>
+							<p id="resumeText">JAN '16 - CURRENT</p>
+							<p id="resumeText"> Performed tasks as a Software Tester, Scrum Master, Process Integrator, and Scrum of Scrums Leader. These roles provided experiences in writing Requirements/Testing Documentation, Automated Testing Scripts, and Consulting on organization's official Software Development Process.</p>
+						</div>
+						
 				</div>
-				
 				<div id='resume-row'>
-					<div id='timeline'><p>This is the timeline!<p></div>
-					<div id='jobdate'>
-						<div id='jobd'><p>JUN '15 -DEC '15</p></div>
-					</div>
-					<div id="jobodd" >
+						<div id='jobpic'>
+							<img src='res/lindleyhallIU.jpg'>
+						</div>
 						<div id="words" >
 							<h3>
-								<b>Research Assistant</b></h3>
-							<h4><b>School of Informatics and Computing, Indiana University Bloomington - Bloomington, IN</b></h4>
-							<p>
-								Improved a low-power hardware design, specifically created for the Indiana Department of Natural Resources to monitor trail usage, and allow for the hardware to run effectively for weeks to months longer than the prototype could.  Developed and calibrated the hardware interrupts for an accelerometer on the STM32F3 Discovery Board.
+								<b id="resumeText">Research Assistant</b></h3>
+							<h4><b id="resumeText">School of Informatics and Computing, Indiana University Bloomington - Bloomington, IN</b></h4>
+							<p id="resumeText">JUN - DEC '15 </p>
+							<p id="resumeText">
+								While in the last semesters of college, improved a low-power hardware design, specifically created for the Indiana Department of Natural Resources. Worked to monitor trail usage, and allow for the hardware to run effectively for weeks to months longer than the prototype could.  Developed and calibrated the hardware interrupts for an accelerometer on the STM32F3 Discovery Board. Researched proper devices for interrupts, then wrote the driver necessary for the device to the board. 
 							</p>
 						</div>
-						<div id='jobpic'>
-							<img src='res/iu.png'>
-						</div>
-					</div>
-					<i id="fifteen"></i>
+						
 				</div>
-					
+					<i id="fifteen"></i>			
 					<div id='resume-row' >
-					<div id='timeline' class="tline_three"style="opacity:0;"><p>This is the timeline!<p></div>
-					<div id='jobdate'  class="datebutton">
-						<div id='jobd'><p>AUG '14 - DEC '14 </p>
-						</div>
-					</div>
-
-					<div id="jobodd" class="buttonUnfold">
-						<div id="words">
-							<h3>
-								<b>Project Leader</b></h3>
-							<h4><b>ServeIT Nonprofit Clinic, Indiana University Bloomington - Bloomington, IN</b></h4>
-							<p>Managed over a team of fellow students, with the Buskirk-Chumley Theater (BCT) non-profit organization, to create an Availability Calendar, to save the time of both potential event renters as well as theater administration.Delegated research and report tasks to the team to complete a Research and Integration Report to consolidate their two-site ticket sale system.</p>
-						</div>
 						<div id='jobpic'>
 							<img src='res/serveit.png' >
-
 						</div>
+						<div id="words">
+							<h3>
+								<b id="resumeText">Project Leader</b></h3>
+							<h4><b id="resumeText">ServeIT Nonprofit Clinic, Indiana University Bloomington - Bloomington, IN</b></h4>
+							<p id="resumeText">AUG - DEC '14</p>
+							<p id="resumeText">Managed over a team of fellow students, with the Buskirk-Chumley Theater (BCT) non-profit organization, to create an Availability Calendar, to save the time of both potential event renters as well as theater administration.Delegated research and report tasks to the team to complete a Research and Integration Report to consolidate their two-site ticket sale system.</p>
+						</div>
+
 					</div>
 					<i id="fourteen"></i>
-				</div>
 
 				<div id='resume-row' >
-					<div id='timeline' class="tline_four"style="display:none;"><p>This is the timeline!<p></div>
-					<div id='earlierPos'>
-						<div id='jobdate'>
-						<div id='jobd'><p>MAY '14 - AUG '14 </p>
-						</div>
-					</div>
-						<div id="jobodd" >
-							<div id="words">
-								<h3>
-									<b>IT Manager</b></h3>
-								<h4><b>Michael Wall Engineering, San Diego, CA</b></h4>
-								<p> Provided management a Cost Analysis for various needs of the firm, including a backup system using a RAID data storage system, as well as created a simple database on which files have been archived</p>
-							</div>
 							<div id='jobpic'>
 							<img src='res/MWE.png' >
 							</div>
-						</div>
-					</div>
+							<div id="words">
+								<h3><b id="resumeText">IT Manager</b></h3>
+								<h4><b id="resumeText">Michael Wall Engineering, San Diego, CA</b></h4>
+								<p id="resumeText">MAY - AUG '14</p>
+								<p id="resumeText"> Provided management a Cost Analysis for various needs of the firm, including a backup system using a RAID data storage system, as well as created a simple database on which files have been archived</p>
+							</div>
+							
 				</div>
-
-				</div>
-				<center>
-					<div id='expandEarlierPos' >
-						<a href="#endResume" style='text-decoration:none; ' id="resume-link">Expand Earlier Positions </a>
-					</div>
-				</center>
 				<i class='endResume' style="opacity:0">B</i>
 			<!--</div> table responsive--> 
 			
