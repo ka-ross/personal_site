@@ -1,10 +1,14 @@
 header{
-	/*background-color: #990000;*/
-	background-color: #283c86;
-	background: linear-gradient(180deg, #00c3ff, #283c86);
+	/*background-color: #990000;
+	background-color: #283c86;*/
+	background: linear-gradient(180deg,#FFA17F, #304352);
+	background-size:cover;
 	height:100%;
 	overflow: visible;
 	text-align: center;
+	padding-left:5%;
+	padding-right:5%;
+	padding-top:5%;
 }
 
 p, h2, h3, body{
@@ -26,30 +30,54 @@ body{
 
 header #introRect {
 	position:relative;
-	width: 100%;
-    height: 700px;
-    margin-top: -30px;
+	/*left: 50%;
+	width: 800px;
+	margin-left: -400px;*/
+    height: 500px;
 }
 
-div#introRect.jumbotron.text-center {
-	/*background-color: #990000;*/
-	color:#EDEBEB;
+.jumbotron p{
+	/*background: linear-gradient(180deg,#FFA17F, #304352);
+	color: transparent;*/
+	color:#977268;
+	-webkit-background-clip: text;
+}
 
-	background-color : transparent;
-	/*background: linear-gradient(180deg, #00c3ff, #283c86);*/
+
+div#introRect.jumbotron.text-center {
+	/*background-color: #990000;
+	color:#EDEBEB;*/
+	color:#977268;
+	-webkit-background-clip: text;
+	/*background-color : transparent;
+	background: linear-gradient(180deg, #00c3ff, #283c86);*/
+}
+
+div#introRect.jumbotron.text-center h1, h3{
+
+	background: linear-gradient(180deg, #FFA17F, #AC7B6D);*/
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+h3#subdesc.Desc{
+	background: linear-gradient(180deg,#AC7B6D, #977268);
+	color: transparent;
+	-webkit-background-clip: text;
 }
 
 div#resumeContent.jumbotron.text-center {
-	/*background-color: #ACA39A;*/
+	background-color: #ACA39A;
 	/*background: linear-gradient(180deg, #283c86, #EF3B36);*/
 }
 
 h1.name {
-	padding-top: 40%;
+	padding-top: 23%;
 }
 
 header .name {
 	margin:0;
+	margin-top:20px;
 	margin-bottom: 15px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 35px;
@@ -66,7 +94,7 @@ header .Desc{
 	font-family: 'Quicksand', sans-serif;
 	margin-top: 12%;
 	letter-spacing: 2px;
-	color:#EDEBEB;
+	/*color:#EDEBEB;*/
 }
 
 header .school{
@@ -123,24 +151,31 @@ header li{
 
 }
 
-section#about{
-	font-family: 'Raleway', sans-serif;
-	height: 600px;
-	font-size:20px;
-	background: linear-gradient(180deg, #283c86, #EF3B36);
-	/*background-color: #006298;*/
-	color:#FFFFFF;
-	padding-bottom: 50px;
-	padding-left: 8%;
-	padding-right: 10%;
-	text-align: center;
+#introSection{
+	background:#F2F2F2;
+	border-radius: 15px;
+}
+div#introRect {
+	background: linear-gradient(180deg,#FFA17F, #304352);
+	color: transparent;
+	-webkit-background-clip: text;
 }
 
-.title{
+section#about{
+	font-family: 'Raleway', sans-serif;
+	/*height: 600px;*/
+	font-size:20px;
+	background: linear-gradient(180deg, #304352,#363795);
+	/*background-color: #006298;*/
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.title {
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: 5px;
 	padding-bottom: 3%;
-	font-size: 55px;
+	font-size: 35px;
 	text-align: center;
 }
 
@@ -154,8 +189,24 @@ section#about img.me{
     height: 100%;
     width: auto;
 
- }
- section#about div#pic{
+}
+
+div.aboutContent{
+ 	background: #fafafa;
+ 	height:100%;
+ 	border-radius: 15px;
+ 	padding:4%;
+}
+div.aboutContent p{
+ 	padding-left:4%;
+ 	padding-right:4%;
+
+ 	background: linear-gradient(180deg, #304352,#363795);
+ 	color: transparent;
+ 	-webkit-background-clip: text;
+
+}
+section#about div#pic{
  	width: 150px;
     height: 150px;
     position: relative;
@@ -165,159 +216,151 @@ section#about img.me{
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
+    font-family: 'Quicksand', sans-serif;
+}
 
- }
+#kr_instafeed{
+  list-style:none  
+}
+
+#kr_instafeed li{
+    padding-right: 91px;
+    margin: 13px;
+    height: 137px;
+}
+#kr_instafeed li img{
+  max-width:100%;
+  /*max-height: 80%;*/
+  border-radius: 15px;
+}
+
+
+
+ul#kr_instafeed {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/*
+ul#kr_instafeed li {
+  display: inline-block;
+  height: 150px;
+  margin: 0 -18em 0 0;
+  position: relative;
+  width: 150px;
+}*/
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 30%;
+  left:0%;
+  position: relative;
+  top: -108px;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  border-radius: 15px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5%;
+}
+
+ul#kr_instafeed li:hover span.text-content {
+  opacity: 1;
+}
+
+div#photobox{
+	margin-top: 5%;
+	margin-bottom: 19%;
+	margin-left: 25%;
+	font-size: 12px;
+}
 
  section#resume {
  	font-family: 'Quicksand', sans-serif;
  	/*background-color: #ACA39A;*/
- 	background: linear-gradient(180deg, #EF3B36,#ef473a);
+ 	background: linear-gradient(180deg, #363795, #614385);
  	font-size: 14px;
  	color:#FFFFFF;
  	width: 100%;
- 	padding-left:4%;
- 	padding-right:4%;
- 	overflow-x: hidden;
- 	/* padding-bottom: 3%;
- 	/* text-align: center;*/
+ 	padding-left:5%;
+ 	padding-right:5%;
+ 	padding-bottom: 3%;
  }
 
-
-
-tr#even {
-	background-color: #847d76;
-	/* border-width:2px;
-	border-radius: 2px/1px;
-	border-radius:40px 10px 10px 40px;*/
-	border:10px solid #847d76;
+a#downloadResume{
+	text-decoration: none;
 }
 
-td#empImg{
-	width:20%;
+a#downloadResume:hover{
+	opacity: .5;
 }
 
-div#jobeven{
-	width:100%;
-	height:80%;
-	padding:2%;
-	background-color: #ef6156;
-	/*border-radius: 20px;*/
-	margin-top: 20px;
-	margin-left: 5px;
-	/*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
-	position: relative;
-	/*float:right;
-	display: inline-block;*/
+#resumeText {
+	background: linear-gradient(to bottom, #363795, #614385);
+	color: transparent;
+	-webkit-background-clip: text;
 }
 
-div#jobodd{
-	width:100%;
-	height:80%;
-	padding:2%;
-	background-color: #ef6156;
-	/*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
-	/*border-radius: 20px;*/
-	margin-top: 20px;
-	margin-left: 5px;
-	position: relative;
+div#ResumeContent { 
+	padding:4%;
+	background: #fafafa;	
+	border-radius: 15px;
 }
 
-#jobdate {
-	background-color: #c1372c;
-	color: #FFFFFF;
-	position: relative;
-	width:80px;
-	height: 80px;
-	border-radius: 50%;
-    margin-top: 5%;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left
-    text-align: center;
-    font-size: 12px;
-    /*box-shadow: 0.4em 0.4em 1em -0.2em #847d76;*/
-    box-shadow: 0.4em 0.4em 1em -0.2em #912a22;
-    
+section#resume h2.title{
+ 	/* padding-left:60%; */
+ 	text-align: center;
+ 	/*color: #FFFFFF;*/
 }
 
-#job-current{
-	display: block;
-    height: 100%;
-    width: auto;
-    padding-top: 24%;
-	padding-bottom: 2%;
-	padding-left: 2%;
-	text-align: center;
+section#resume img#employer{
+ 	width:100%;
+ 	/*max-height: 200px;
+ 	max-width:200px;*/
 }
 
-#job-current p{
-	font-size: 12px;
-}
 
-#jobd{
-	display: block;
-    height: 100%;
-    width: auto;
-    padding-top: 26%;
-	padding-bottom: 2%;
-	padding-left: 0%;
-}
-#jobd p{
-	font-size: 12px;
-	padding-left:19%;
-}
 
-#jobdate:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 10px;
-  bottom: -10px;
-  left: 50%;
-  border-left: 3px dotted #ff0000;
-  
-}
-
-#timeline{
-	padding-top: 13%;
-	padding-bottom:114%;
-	margin-left: 9%;
-	margin-top: 17%;
-	color:#FFFFFF;
-	border-left: thick dotted #FFFFFF;
-	position: absolute;
-  	z-index: 0;
-  	display:none;
-}
-#timeline p{
-	display: none;
-}
 
 #resume-row{
-	width: 96%;
+	display: inline-block;
+	width:95%;
+	padding-left: 1%;
+	padding-right:4%;
+	padding-bottom: 2%;
 }
 
 
 div#words{
-	padding-top: 10px;
-	padding-left: 20px;
-	width:100%;
-	word-wrap: break-word;
+/*	float:right;
+	width:80%;
+	padding-left: 4%;*/
 
 }
 div#jobpic{
-	width:250px;
-	margin-bottom: 5%;
+	width:100%;
+	padding-top: 3%;
+	margin-left: 4%;
 }
 div#jobpic img{
-	padding-left: 5%;
-	padding-top: 20px;
 	width:100%;
-	display:none;
+	border-radius: 15px;
 }
+
 div#years {
 	display: inline-block;
-	width:370px;
 	margin-bottom: 3%;
 }
 
@@ -334,10 +377,10 @@ a#expandlink, a#singleyr {
 	/*color:#337ab7;*/
 }
 
-div#expandEarlierPos{
-	padding-top: 9%;
-	padding:2%;
-	background-color: #ef6156;
-	margin-top: 3%;
-    width: 54%;
+a#resume-link {
+
+	text-decoration: none;
+	background: linear-gradient(to bottom, #363795, #614385);
+	color: transparent;
+	-webkit-background-clip: text;
 }
